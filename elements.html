@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ренпринт - Элементы интерфейса</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="js/masked.input.js"></script>
+<script type="text/javascript" src="js/jquery.nicefileinput.min.js"></script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="top-wrap">
+
+  <div class="top-main">
+    
+    <div class="header">
+      
+      
+    </div>
+    
+    <div class="body">
+      
+      <div class="center-wrapper">
+        <h1>Элементы интерфейса</h1>
+        
+        <h2>Кнопки</h2>
+        
+        <h3>class="button button-1"</h3>
+        
+        <div class="button button-1">Заказать</div>
+        
+        <h3>class="button button-2"</h3>
+        
+        <div class="button button-2">Заказать</div>
+        
+        <h3>class="button button-3"</h3>
+        
+        <div class="button button-3">Заказать</div>
+        
+        <h3>class="button button-4"</h3>
+        
+        <div class="button button-4">Оставить заявку</div>
+        
+        <h3>class="button button-5"</h3>
+        
+        <div class="button button-5">Выбрать файл</div>
+        
+        <h3>class="button button-6"</h3>
+        
+        <div class="button button-6">Редактировать заказ</div>
+        
+        <h3>class="button button-7"</h3>
+        
+        <div class="button button-7">Добавить еще продукт</div>
+        
+        <h3>class="button button-2"</h3>
+        
+        <div class="button button-2">Я подтверждаю свой заказ</div>
+        
+        <h3>class="button button-3 button-back"</h3>
+        
+        <div class="button button-3 button-back">Назад</div>
+        
+        <h3>class="button button-2 button-forward"</h3>
+        
+        <div class="button button-2 button-forward">Продолжить</div>
+        
+        <h3>class="button button-6 button-expand"</h3>
+        
+        <div class="button button-6 button-expand">Редактировать заказ</div>
+        
+        <h3>class="button button-7 button-add"</h3>
+        
+        <div class="button button-7 button-add">Добавить еще продукт</div>
+        
+        <h3>class="button button-download"</h3>
+        
+        <div class="button button-download"><big>Сохранить расчет</big><small>ссылка</small></div>
+        
+        <h3>class="button button-download button-pdf"</h3>
+        
+        <div class="button button-download button-pdf"><big>Показать расчет</big><small>pdf файл</small></div>
+        
+        <h3>class="button button-delete"</h3>
+        
+        <div class="button button-delete">Удалить все продукты</div>
+        
+        <h3>class="button button-cart"</h3>
+        
+        <div class="button button-cart">2 продукта <span>14 769,15 р.</span></div>
+        
+        <h3>class="button button-cart"</h3>
+        
+        <div class="button button-cart">корзина пуста</div>
+        
+        <h2>Формы</h2>
+        
+        <div style="width:500px;background:#f4f4f2;padding:20px;">
+          <form action="">
+        	
+        	  <div class="form-item">
+        	    <label for="form_form_text">Текстовое поле</label>
+        	    <input type="text" name="form_form_text" id="form_form_text" class="form-text"/>
+        	  </div>
+        	  
+        	  <div class="form-item">
+        	    <label for="form_form_text_req">Обязательное текстовое поле<span class="req">*</span></label>
+        	    <input type="text" name="form_form_text_req" id="form_form_text_req" class="form-text" required />
+        	  </div>
+            
+            <div class="form-item">
+        	    <label for="form_form_email">E-mail<span class="req">*</span></label>
+        	    <input type="text" name="form_form_email" id="form_form_email" class="form-text form-email" required />
+        	  </div>
+            
+            <div class="form-item">
+        	    <label for="form_form_phone">Телефон<span class="req">*</span></label>
+        	    <input type="text" name="form_form_phone" id="form_form_phone" class="form-text form-phone" required />
+        	  </div>
+            
+            <div class="form-item">
+        	    <label for="form_form_text">Поле с подсказкой</label>
+        	    <input type="text" name="form_form_text" id="form_form_text" class="form-text"/>
+              <div class="form-tooltip-trigger"></div>
+              <div class="tooltip form-tooltip">
+                <div class="tooltip-cont">Это текстовое поле, в которое, очевидно, нужно вводить текст. Если рядом с названием поля стоит красная звездочка, то поле обязательное.</div>
+              </div>
+        	  </div>
+            
+            <div class="form-item">
+        	    <input type="file" name="form_form_file" id="form_form_file" class="form-file" />
+              <div class="form-tooltip-trigger"></div>
+              <div class="tooltip form-tooltip">
+                <div class="tooltip-cont">Это текстовое поле, в которое, очевидно, нужно вводить текст. Если рядом с названием поля стоит красная звездочка, то поле обязательное.</div>
+              </div>
+        	  </div>
+        	  
+        	  <div class="form-item">
+        	    <label for="form_form_select">Выпадающий список<span class="req">*</span></label>
+        	    <select name="form_form_select" id="form_form_select" class="form-select hide-ttl" required>
+        	      <option value="">Выберите опцию</option>
+        	      <option value="1">Опция 1</option>
+        	      <option value="2">Опция 2</option>
+        	      <option value="3">Опция 3</option>
+        	      <option value="4">Опция 4</option>
+        	    </select>
+        	  </div>
+        	  
+        	  <div class="form-item">
+        	    <label for="form_form_textarea">Многострочное текстовое поле<span class="req">*</span></label>
+        	    <textarea name="form_form_textarea" id="form_form_textarea" rows="8" class="form-textarea" required></textarea>
+        	  </div>
+        	  
+        	  <div class="form-item">
+        	    <label for="form_form_text_date">Дата<span class="req">*</span></label>
+        	    <input type="text" name="form_form_text_date" id="form_form_text_date" class="form-text form-date" required />
+        	  </div>
+        	  
+        	  <h3>Радиокнопки</h3>
+        	  
+        	  <div class="form-item form-radios fc">
+        	    <label for="form_radios_1"><input type="radio" name="form_radios" id="form_radios_1" class="form-radio" checked />Самовывоз</label>
+        	    <label for="form_radios_2"><input type="radio" name="form_radios" id="form_radios_2" class="form-radio"/>Доставка по адресу</label>
+        	  </div>
+        	  
+        	  <h3>Радиокнопки c описанием</h3>
+        	  
+        	  <div class="form-item form-radios fc">
+        	    <label for="form_radios_alt_1">
+        	      <input type="radio" name="form_radios_alt" id="form_radios_alt_1" class="form-radio" checked />Стандарт
+        	      <div class="radio-hint">
+        	        пн-пт с 9:00 до 18:00<br />
+        	        828,36 р.
+        	      </div>
+        	    </label>
+        	    <label for="form_radios_alt_2">
+        	      <input type="radio" name="form_radios_alt" id="form_radios_alt_2" class="form-radio"/>Эконом
+        	      <div class="radio-hint">
+        	        пн-пт с 9:00 до 18:00<br />
+        	        828,36 р.
+        	      </div>
+        	    </label>
+        	  </div>
+        	  
+        	  <h3>Чекбокс</h3>
+        	  
+        	  <div class="form-item form-checkboxes">
+        	    <label for="form_checkbox"><input type="checkbox" name="form_checkbox" id="form_checkbox" class="form-checkbox"/>Я согласен со всеми условиями</label>
+        	  </div>
+        	  
+        	  <div class="form-footer fc">
+        	    <input type="submit" value="Продолжить" class="form-submit button button-2 button-forward"/>
+        	  </div>
+        	
+          </form>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+    
+    
+  </div>
+
+</div>
+
+<div class="footer">
+  
+</div>
+
+</body>
+
+</html>

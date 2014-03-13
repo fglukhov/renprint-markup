@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ренпринт - Личный кабинет - Заказ</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="js/masked.input.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicefileinput.min.js"></script>
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    openPopup("orderCardPopup");
+  });
+</script>
+
+</head>
+
+<body class="page-inner">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="top-wrap">
+
+  <div class="top-main">
+    
+    <div class="header header-inner">
+      
+      <div class="main-menu-wrapper">
+        <div class="center-wrapper">
+        	<ul class="main-menu">
+        	  <li><a href="#">Калькулятор</a></li>
+        	  <li><a href="#">Почему мы?</a></li>
+        	  <li><a href="#">Как мы работаем</a></li>
+        	  <li><a href="#">Наши возможности</a></li>
+        	  <li><a href="#">Получи скидку</a></li>
+        	  <li><a href="#">Портфолио</a></li>
+        	  <li><a href="#">Контакты</a></li>
+        	</ul>
+        </div>
+      </div>
+      
+      <div class="header-bottom fc">
+        <div class="center-wrapper">
+        	<div class="header-l">
+        	  <div class="header-schedule">
+        	    Звоните с 10.00 до 20.00 ежедневно
+        	  </div>
+        	  <div class="header-phone">
+        	    +7 (495) 642-15-11
+        	  </div>
+        	  <div class="header-callback">
+        	    <span class="callback-trigger" onclick="openPopup('callbackPopup')">Заказать обратный звонок</span>
+        	  </div>
+        	</div>
+        	<div class="logo">
+        	  <a href="#"><img src="images/logo.png" alt="Renaissanse Art Group"/></a>
+        	</div>
+        	<div class="header-r">
+        	  <div class="user-block">
+        	    <a href="#">Личный кабинет</a>
+        	  </div>
+        	  <div class="header-cart">
+        	    <div class="button button-cart">2 продукта <span>14 769,15 р.</span></div>
+        	  </div>
+        	  <div class="button button-4" onclick="openPopup('orderPopup')">Оставить заявку</div>
+        	</div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="body">
+    
+      
+      <div class="center-wrapper">
+      	<div id="calc" class="flow">
+      	  <div id="steps">
+      	    <div class="account-div fc">
+      	      <div class="account-left">
+      	        <div id="account" class="block myaccount account-in">
+      	          <div class="account-ttl">Здравствуйте, <strong>Константин</strong></div>
+      	          <div class="block_content">
+      	            <ul>
+      	              <li><a title="Мои личные данные" href="/user">Мои личные данные</a></li>
+      	              <li class="act"><a title="Мои заказы" href="/user/show-order">Мои заказы</a></li>
+      	              <li><a title="Мои расчеты" href="/user/show-saved">Мои расчеты</a></li>
+      	              <li><a title="Мой пароль" href="/user/request/email/dt@renart.ru">Изменить пароль</a></li>
+      	              <li><a title="Мои купоны" href="/user">Мои купоны</a></li>
+      	              <li><a title="Сделать доплату к заказу" href="/web/payment">Сделать доплату к заказу</a></li>
+      	            </ul>
+      	            <p class="logout">
+      	              <a class="button button-8" title="Выход" href="/user/logout">Выйти</a>
+      	            </p>
+      	            <br>
+      	          </div>
+      	        </div>
+      	      </div>
+      	      <div class="account-right">
+      	        <h2>Мои заказы</h2>
+      	        <div>
+      	          <div id="block-history" class="block-center">
+      	            <table id="order-list" class="table_header">
+      	            <tbody>
+      	            <tr>
+      	              <th class="first_item item-1">
+      	                Заказ
+      	              </th>
+      	              <th class="item item-2">
+      	                Дата
+      	              </th>
+      	              <th class="item item-3">
+      	                Сумма
+      	              </th>
+      	              <th class="item item-4">
+      	                Оплата
+      	              </th>
+      	              <th class="item item-5">
+      	                Статус
+      	              </th>
+      	              <th class="item item-6">
+      	                Подробности
+      	              </th>
+      	            </tr>
+      	            </tbody>
+      	            </table>
+      	          </div>
+      	          <div class="account_table">
+      	            <div id="orders">
+      	              <p class="p_show">
+      	                <span class="order-field field-1" onclick="show_order(36937); return false;"><span>PM-Z01368</span></span>
+      	                <span class="order-field field-2">04.12.2013 20:09:52</span>
+      	                <span class="order-field field-3">2&nbsp;624,44 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="in-process">В ожидании</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/0148bU5cqpnZWledHTrYWbrJijksijkMm0o7_cy53GudPGqKvi1Kjbqt7T3cq4lcG66ISs2bW9ksikkJ3mupWr3bjg0pvdm8LWo8vdpd_Pxaa-uNi_2Kezvr29/tmpfile/Счет к Вашему заказу PM-Z01368" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z01368" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(36937); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_show">
+      	                <span class="order-field field-1" onclick="show_order(36936); return false;"><span>PM-Z01367</span></span>
+      	                <span class="order-field field-2">04.12.2013 20:08:09</span>
+      	                <span class="order-field field-3">1&nbsp;836,52 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="done">Оплачен</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/x91KnT2Nhvl5emXKGboaaXbpecmZWXpMGbkXncrNV6mN_Uebmq142Karjqra_HsKulrM7EfqWNitaTcpmu3Xip2uGBfZG0rKiqvajXrNGzxaOPjdXn2qu8zOp2/tmpfile/Счет к Вашему заказу PM-Z01367" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z01367" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(36936); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_show">
+      	                <span class="order-field field-1" onclick="show_order(35360); return false;"><span>PM-Z01198</span></span>
+      	                <span class="order-field field-2">22.11.2013 17:13:55</span>
+      	                <span class="order-field field-3">2&nbsp;024,99 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="done">Оплачен</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/0148bU5cqpnZWledHTrYWappucksijkM6mvam4yJ3T4r_Dvsq_xouZwbG346vWrNCkt6bKy6_dksikkNrop5PN6Kvi1qzCm9_cuque2bfa5si2xL7Hs6PHv8mk/tmpfile/Счет к Вашему заказу PM-Z01198" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z01198" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(35360); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_hide" style="display: block;">
+      	                <span class="order-field field-1" onclick="show_order(35220); return false;"><span>PM-Z01186</span></span>
+      	                <span class="order-field field-2">21.11.2013 17:06:43</span>
+      	                <span class="order-field field-3">1&nbsp;340,48 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="done">Оплачен</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/023sTY4Myymp53mN7HqIOeoJmlj9F1r-29zIKesZ7O1tKpv-W05La_47rcwcV3qryur8e7w9Lmj9F2r-y9rsjRttG7oqaqpMWquMS_osDoy7-p2azQsIato9LJ/tmpfile/Счет к Вашему заказу PM-Z01186" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z01186" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(35220); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_hide" style="display: block;">
+      	                <span class="order-field field-1" onclick="show_order(35113); return false;"><span>PM-Z01181</span></span>
+      	                <span class="order-field field-2">20.11.2013 20:10:03</span>
+      	                <span class="order-field field-3">9&nbsp;631,22 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="done">Оплачен</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/023sTY4Myymp53mN7HqIOen5ioj9F1r-O65MO2wbfOsN-Kq8ubvKTh4tyr29u02O-m0oWzsrm6j9F2r-y2ram2r7y8vdl82e_cu77fob3pneaWtdvG3J7Wo8jP/tmpfile/Счет к Вашему заказу PM-Z01181" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z01181" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(35113); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_hide" style="display: block;">
+      	                <span class="order-field field-1" onclick="show_order(33844); return false;"><span>PM-Z01094</span></span>
+      	                <span class="order-field field-2">11.11.2013 18:39:01</span>
+      	                <span class="order-field field-3">2&nbsp;461,96 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="done">Оплачен</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/x91KnT2Nhvl5emXKGboaaUbZiamZWXpKephpCv2KSJ1rvhhNPP15mvnbTp1XbcnuhpnNHAkGqxitaTcqmuuYiby9SOa3vZqsanpbjng8jVtq-Mh8fgtny-2dqL/tmpfile/Счет к Вашему заказу PM-Z01094" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z01094" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(33844); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_hide" style="display: block;">
+      	                <span class="order-field field-1" onclick="show_order(33840); return false;"><span>PM-Z01093</span></span>
+      	                <span class="order-field field-2">11.11.2013 18:30:14</span>
+      	                <span class="order-field field-3">1&nbsp;836,52 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="cancelled">Заказ отменен</span></span>
+      	                <span class="order-field field-6"><img class="ico-pdf" src="images/void.gif" title="Заказ PM-Z01093 отменен" alt="pdf"></span>
+      	                <span class="order-field field-7" onclick="show_order(33840); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_hide" style="display: block;">
+      	                <span class="order-field field-1" onclick="show_order(32769); return false;"><span>PM-Z01018</span></span>
+      	                <span class="order-field field-2">01.11.2013 14:06:01</span>
+      	                <span class="order-field field-3">33&nbsp;576,51 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="done">Оплачен</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/x91KnT2Nhvl5emXKGboaaTbJqfmZWXpOqZanic49urvbnFnK6gtZCsgqjDl67cqcGjvpvgnI1sitaTcrfbtGTYr9aIkJnM7MJ30rupqc3Xvo-ycJvrsp-x0emC/tmpfile/Счет к Вашему заказу PM-Z01018" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z01018" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(32769); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_hide" style="display: block;">
+      	                <span class="order-field field-1" onclick="show_order(32162); return false;"><span>PM-Z00984</span></span>
+      	                <span class="order-field field-2">27.10.2013 19:27:22</span>
+      	                <span class="order-field field-3">1&nbsp;013,60 р.</span>
+      	                <span class="order-field field-4">Банковский перевод</span>
+      	                <span class="order-field field-5"><span class="cancelled">Заказ отменен</span></span>
+      	                <span class="order-field field-6"><img class="ico-pdf" src="images/void.gif" title="Заказ PM-Z00984 отменен" alt="pdf"></span>
+      	                <span class="order-field field-7" onclick="show_order(32162); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	              <p class="p_hide" style="display: block;">
+      	                <span class="order-field field-1" onclick="show_order(28916); return false;"><span>PM-Z00806</span></span>
+      	                <span class="order-field field-2">24.09.2013 19:38:12</span>
+      	                <span class="order-field field-3">10&nbsp;221,42 р.</span>
+      	                <span class="order-field field-4">Электронный платеж</span>
+      	                <span class="order-field field-5"><span class="done">Оплачен</span></span>
+      	                <span class="order-field field-6"><a href="order/pdf/order/ld_id/023sTY4Myymp53mN7HqIKhp5irj9F1r8q0oaKc06zutqCY37yn0sKsx9HLqrqSqczXtaC0otKtj9F2r-DEspqcxtzfrsWxv8Okz7ei4crBvba01Maz5YjXpcC5/tmpfile/Счет к Вашему заказу PM-Z00806" target="blank"><img class="ico-pdf" src="images/void.gif" title="Счет к Вашему заказу PM-Z00806" alt="pdf"></a></span>
+      	                <span class="order-field field-7" onclick="show_order(28916); return false;"><img class="ico-zoom" src="images/void.gif" title="Посмотреть подробнее" alt="подробнее"></span>
+      	                
+      	              </p>
+      	            </div>
+      	          </div>
+      	        </div>
+      	      </div>
+      	    </div>
+      	    
+      	  </div>
+      	</div>
+      </div>
+      
+      
+    </div>
+    
+    
+  </div>
+
+</div>
+
+<div class="footer">
+
+  <div class="footer-cont">
+  	<div class="center-wrapper">
+  	  <p>
+  	    Renaissance Print &copy; 2013<br />
+  	    Все права защищены. Ренессанс Принт™ является товарным знаком компании Renaissance Art Group
+  	  </p>
+  	  <p>
+  	    <a href="#">Условия пользования сайтом</a>
+  	  </p>
+  	</div>
+  </div>
+</div>
+
+<!-- Popups -->
+
+<div class="popup order-popup" id="orderPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Отправить заявку</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <div class="common-form order-form-2">
+        <input type="hidden" name="order_2_kind" id="order_2_kind" />
+        <div class="form-cont">
+          <form action="." id="orderForm2">
+            <div class="form-item errors-left">
+              <label class="placeholder" for="order_2_name">Ваше имя</label>
+              <input type="text" class="form-text" name="order_2_name" id="order_2_name" required />
+            </div>
+            <div class="form-row fc">
+              <div class="form-item errors-left">
+                <label class="placeholder" for="order_2_phone">Телефон</label>
+                <input type="text" class="form-text form-phone" name="order_2_phone" id="order_2_phone" />
+              </div>
+              <div class="form-item">
+                <label class="placeholder" for="order_2_email">E-mail</label>
+                <input type="text" class="form-text form-email" name="order_2_email" id="order_2_email" />
+              </div>
+            </div>
+            <div class="form-item">
+              <label class="placeholder" for="order_2_message">Ваш вопрос</label>
+              <textarea class="form-textarea" name="order_2_message" id="order_2_message" rows="5"></textarea>
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Отправить" class="form-submit button button-2"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup callback-popup" id="callbackPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Заказать звонок</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <div class="common-form callback-form">
+        <div class="form-cont">
+          <form action="." id="callbackForm">
+            <div class="form-item errors-left">
+              <label class="placeholder" for="callback_name">Ваше имя</label>
+              <input type="text" class="form-text" name="callback_name" id="callback_name" required />
+            </div>
+            <div class="form-item errors-left">
+              <label class="placeholder" for="callback_phone">Телефон</label>
+              <input type="text" class="form-text form-phone" name="callback_phone" id="callback_phone" required />
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Отправить" class="form-submit button button-2"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup callback-popup" id="successPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Спасибо!</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <p>Ваша заявка принята. В ближайшее время с<br />вами свяжется наш менеджер.</p>
+    </div>
+  </div>
+</div>
+
+<div class="popup order-card-popup" id="orderCardPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <div class="close"></div>
+    </div>
+    <div class="order-card">
+      <h1>Ваш заказ: PM-Z01368</h1>
+      <div class="payment-order-block">
+        <table class="payment-prices order-status">
+          <tr>
+            <th>Дата оформления</th>
+            <th>Способ оплаты</th>
+            <th>Статус</th>
+          </tr>
+          <tr>
+            <td>04.12.2013<br />в 20:09:52</td>
+            <td>Банковский перевод</td>
+            <td><span class="total"><span class="done">оплачен</span></span></td>
+          </tr>
+        </table>
+        <hr/>
+        <div class="order-items-list">
+        	<div class="payment-order-item">
+        	  <div class="oi-ttl">
+        	    Буклет-лифлет
+        	  </div>
+        	  <div class="oi-descr">
+        	    <p>150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%), 210 x 210 мм., Односторонняя полноцветная печать (4+0), Фальцовка - фальц лифлет (6 страниц), Сверление - 1 отверстие 3.0мм, Перфорация - 1 перфорация.</p>
+        	  </div>
+        	  <h3>прикрепленные файлы</h3>
+        	  <div class="attachments-list fc">
+        	    <div class="al-item fc">
+        	      <div class="pic">
+        	        <a href="#"><img src="files/file-tmb.jpg"></a>
+        	      </div>
+        	      <div class="descr">
+        	        <div class="file-name">Семья веселых утят на прогулке летним днем.pdf</div>
+        	        <div class="file-size">186.4 kB</div>
+        	        <div class="file-side">
+        	          лицевая сторона
+        	        </div>
+        	      </div>
+        	    </div>
+        	    <div class="al-item fc">
+        	      <div class="pic">
+        	        <a href="#"><img src="files/file-tmb.jpg"></a>
+        	      </div>
+        	      <div class="descr">
+        	        <div class="file-name">Семья веселых утят на прогулке летним днем.pdf</div>
+        	        <div class="file-size">186.4 kB</div>
+        	        <div class="file-side">
+        	          оборотная сторона
+        	        </div>
+        	      </div>
+        	    </div>
+        	  </div>
+        	  <div class="oi-controls fc">
+        	    <div class="oi-edit">
+        	      <div class="edit-expandable">
+        	        <div class="cont">
+        	          <ul>
+        	            <li><a href="#">Изменить конфигурацию продукта</a></li>
+        	            <li><a href="#">Изменить послепечатную отделку</a></li>
+        	            <li><a href="#">Изменить файлы</a></li>
+        	            <li><a href="#">Изменить информацию о доставке</a></li>
+        	          </ul>
+        	        </div>
+        	      </div>
+        	    </div>
+        	    <div class="oi-price">99&nbsp;397,91 р.</div>
+        	    <div class="oi-count">15 000 шт.</div>
+        	  </div>
+        	</div>
+        </div>
+        
+      </div>
+      
+      <h3 class="block-ttl">Доставка</h3>
+      
+      <div class="payment-order-block">
+        <table class="order-card-shipping">
+          <tr>
+            <td class="name">
+              cамовывоз 05.02.2014<br />
+              м. Курская, пн-пт, с 17:00 часов<br />
+              Буклет/Лифлет ( 400 шт. )
+            </td>
+            <td class="val val-1">
+              7,88 кг.
+            </td>
+            <td class="val">
+              0,00 р.
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="order-card-info">
+        <p>Получение заказа в рабочие дни с понедельника по пятницу по адресу:<br />
+        	Москва, Нижний Сусальный пер., д. 5, стр. 10 (м. Курская, территория завода "Арма"). Подробная информация о самовывозе, а также схема проезда доступна по ссылке: <a href="http://printomat.ru/content/delivery">http://printomat.ru/content/delivery</a></p>
+      </div>
+      
+      <h3 class="block-ttl">Итого</h3>
+      
+      <div class="payment-order-block">
+        <table class="payment-prices order-card-total">
+          <tr>
+            <th>Сумма заказа:</th>
+            <th>НДС:</th>
+            <th>Итого (с НДС):</th>
+          </tr>
+          <tr>
+            <td>2&nbsp;032,13 р.</td>
+            <td>365,78 р.</td>
+            <td><span class="total">2&nbsp;032,13 р.</span></td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Popups END -->
+
+</body>
+
+</html>

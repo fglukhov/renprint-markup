@@ -1,0 +1,1736 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ренпринт - Калькулятор</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'><link rel="stylesheet" type="text/css" href="css/cssreset-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="js/masked.input.js"></script>
+<script type="text/javascript" src="js/jquery.nicefileinput.min.js"></script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="top-wrap">
+
+  <div class="top-main">
+    
+    <div class="header">
+      
+      
+    </div>
+    
+    <div class="body">
+      
+      <div class="center-wrapper">
+        <h1>Калькулятор</h1>
+        
+        <h2>Продукт</h2>
+        
+        <div id="calc" class="print-calc">
+          <div id="steps" class="fc">
+            <form id="product-form" action="/shop" method="POST">
+              <div id="step-0" class="step step-0">
+                <div class="dummy" style="display: none;">
+                </div>
+                <div class="wait" style="display: none;">
+                </div>
+                <h2>Ваш онлайн-заказ</h2>
+                <a class="scroll up disabled">&nbsp;</a>
+                <div id="table-0" class="options options-12">
+                  <table id="s-product">
+                  <tbody>
+                  <tr id="product_832">
+                    <td onclick="set_product_id(832); return false;">
+                      <span>Брошюра на скрепке</span>
+                    </td>
+                  </tr>
+                  <tr id="product_714">
+                    <td onclick="set_product_id(714); return false;">
+                      <span>Календарь перекидной</span>
+                    </td>
+                  </tr>
+                  <tr id="product_549">
+                    <td onclick="set_product_id(549); return false;">
+                      <span>Флаер/Листовка</span>
+                    </td>
+                  </tr>
+                  <tr id="product_546">
+                    <td onclick="set_product_id(546); return false;">
+                      <span>Открытка</span>
+                    </td>
+                  </tr>
+                  <tr id="product_544">
+                    <td onclick="set_product_id(544); return false;">
+                      <span>Визитные карточки</span>
+                    </td>
+                  </tr>
+                  <tr class="active" id="product_548">
+                    <td onclick="set_product_id(548); return false;">
+                      <span>Пригласительный</span>
+                    </td>
+                  </tr>
+                  <tr id="product_543">
+                    <td onclick="set_product_id(543); return false;">
+                      <span>Буклет/Лифлет</span>
+                    </td>
+                  </tr>
+                  <tr id="product_547">
+                    <td onclick="set_product_id(547); return false;">
+                      <span>Постер</span>
+                    </td>
+                  </tr>
+                  <tr id="product_542">
+                    <td onclick="set_product_id(542); return false;">
+                      <span>Бланк</span>
+                    </td>
+                  </tr>
+                  <tr id="product_437">
+                    <td onclick="set_product_id(437); return false;">
+                      <span>Папка</span>
+                    </td>
+                  </tr>
+                  <tr id="product_545">
+                    <td onclick="set_product_id(545); return false;">
+                      <span>Наклейка</span>
+                    </td>
+                  </tr>
+                  <tr id="product_661">
+                    <td onclick="set_product_id(661); return false;">
+                      <span>Электростатическая наклейка</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <a class="scroll down">&nbsp;</a>
+              </div>
+              <div id="step-1" class="step step-1">
+                <div class="dummy" style="display: none;">
+                </div>
+                <div class="wait" style="display: none;">
+                </div>
+                <h2>Бумага</h2>
+                <a class="scroll up disabled">&nbsp;</a>
+                <div id="table-1" class="options options-2">
+                  <table id="s-paper">
+                  <tbody>
+                  <tr id="paper_553" class="active">
+                    <td onclick="set_paper_id(553); return false;">
+                      <img width="1" src="images/empty.png"><span>250г матовая мелованная</span>
+                    </td>
+                  </tr>
+                  <tr id="paper_555">
+                    <td onclick="set_paper_id(555); return false;">
+                      <img width="1" src="images/empty.png"><span>350г матовая мелованная</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <a class="scroll down">&nbsp;</a>
+              </div>
+              <div id="step-2" class="step step-2">
+                <div class="dummy" style="display: none;">
+                </div>
+                <div class="wait" style="display: none;">
+                </div>
+                <h2>Размер</h2>
+                <a class="scroll up disabled">&nbsp;</a>
+                <div id="table-2" class="options options-12">
+                  <table id="s-size">
+                  <tbody>
+                  <tr id="own_format">
+                    <td data="own_format" onclick="show_search_form_format(); return false;">
+                      <img width="1" src="images/empty.png"><span>Свой размер</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1199">
+                    <td data="148x105" onclick="set_format_id(1199); return false;">
+                      <img width="1" src="images/empty.png"><span>A6 (148x105)</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1155">
+                    <td data="210x105" onclick="set_format_id(1155); return false;">
+                      <img width="1" src="images/empty.png"><span>210x105</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1198">
+                    <td data="210x148" onclick="set_format_id(1198); return false;">
+                      <img width="1" src="images/empty.png"><span>A5 (210x148)</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1164">
+                    <td data="297x105" onclick="set_format_id(1164); return false;">
+                      <img width="1" src="images/empty.png"><span>297x105</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1156" class="active">
+                    <td data="210x210" onclick="set_format_id(1156); return false;">
+                      <img width="1" src="images/empty.png"><span>210x210</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1172">
+                    <td data="420x105" onclick="set_format_id(1172); return false;">
+                      <img width="1" src="images/empty.png"><span>420x105</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1197">
+                    <td data="297x210" onclick="set_format_id(1197); return false;">
+                      <img width="1" src="images/empty.png"><span>A4 (297x210)</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1173">
+                    <td data="420x148" onclick="set_format_id(1173); return false;">
+                      <img width="1" src="images/empty.png"><span>420x148</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1174">
+                    <td data="420x210" onclick="set_format_id(1174); return false;">
+                      <img width="1" src="images/empty.png"><span>420x210</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1196">
+                    <td data="420x297" onclick="set_format_id(1196); return false;">
+                      <img width="1" src="images/empty.png"><span>A3 (420x297)</span>
+                    </td>
+                  </tr>
+                  <tr id="format_1202">
+                    <td data="630x297" onclick="set_format_id(1202); return false;">
+                      <img width="1" src="images/empty.png"><span>Евробуклет (630x297)</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <a class="scroll down">&nbsp;</a>
+              </div>
+              <div id="step-3" class="step step-3">
+                <div class="dummy" style="display: none;">
+                </div>
+                <div class="wait" style="display: none;">
+                </div>
+                <h2>Краски</h2>
+                <a class="scroll up disabled">&nbsp;</a>
+                <div id="table-3" class="options options-2">
+                  <table id="s-color">
+                  <tbody>
+                  <tr id="color_309">
+                    <td onclick="set_color_id(309); return false;">
+                      <img width="1" src="images/empty.png"><span>Односторонняя полноцветная печать (4+0)</span>
+                    </td>
+                  </tr>
+                  <tr id="color_310" class="active">
+                    <td onclick="set_color_id(310); return false;">
+                      <img width="1" src="images/empty.png"><span>Двухсторонняя полноцветная печать (4+4)</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <a class="scroll down">&nbsp;</a>
+              </div>
+              <div id="step-5" class="step step-1" style="">
+                <div class="dummy" style="display: none;">
+                </div>
+                <div class="wait" style="display: none;">
+                </div>
+                <h2>Фальцовка</h2>
+                <a class="scroll up disabled">&nbsp;</a>
+                <div id="table-5" class="options options-2">
+                  <table id="s-fold">
+                  <tbody>
+                  <tr class="active" id="fold_pso_lang_1">
+                    <td onclick="set_fold_load('pso_lang_1','Фальц по короткой стороне'); return false;" onmouseover="show_fold_load('pso_lang_1','Фальц по короткой стороне'); return false;">
+                      <img width="1" src="images/empty.png"><span>Фальц по короткой стороне</span>
+                    </td>
+                  </tr>
+                  <tr id="fold_pso_kurz_1">
+                    <td onclick="set_fold_load('pso_kurz_1','Фальц по длинной стороне'); return false;" onmouseover="show_fold_load('pso_kurz_1','Фальц по длинной стороне'); return false;">
+                      <img width="1" src="images/empty.png"><span>Фальц по длинной стороне</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <a class="scroll down">&nbsp;</a>
+                <div id="show_fold" class="description">
+                  <img id="prod_img" onclick="show_fold_image('pso_lang_1', 'Фальц по короткой стороне'); return false;" class="product_image" src="load/images/fold_images/pso_lang_1.png" alt="">
+                </div>
+              </div>
+              <div id="step-4" class="step step-4 options-scroll">
+                <div class="dummy" style="display: none;">
+                </div>
+                <div class="wait" style="display: none;">
+                </div>
+                <h2>Тираж и стоимость</h2>
+                <a class="scroll up disabled">&nbsp;</a>
+                <div id="table-4" class="options options-17">
+                  <table id="s-quantity">
+                  <tbody>
+                  <tr id="charge_1082">
+                    <td onclick="set_charge_id(1082,10); return false;">
+                      <img width="1" src="images/empty.png"><span>10</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>1&nbsp;226,33 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_1085">
+                    <td onclick="set_charge_id(1085,25); return false;">
+                      <img width="1" src="images/empty.png"><span>25</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>1&nbsp;358,50 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_646">
+                    <td onclick="set_charge_id(646,50); return false;">
+                      <img width="1" src="images/empty.png"><span>50</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>1&nbsp;578,79 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_1090">
+                    <td onclick="set_charge_id(1090,75); return false;">
+                      <img width="1" src="images/empty.png"><span>75</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>1&nbsp;799,06 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_899">
+                    <td onclick="set_charge_id(899,100); return false;">
+                      <img width="1" src="images/empty.png"><span>100</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>2&nbsp;019,35 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_1083">
+                    <td onclick="set_charge_id(1083,150); return false;">
+                      <img width="1" src="images/empty.png"><span>150</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>2&nbsp;459,91 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_1084">
+                    <td onclick="set_charge_id(1084,200); return false;">
+                      <img width="1" src="images/empty.png"><span>200</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>2&nbsp;900,48 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_906">
+                    <td onclick="set_charge_id(906,250); return false;">
+                      <img width="1" src="images/empty.png"><span>250</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>3&nbsp;412,35 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_1086">
+                    <td onclick="set_charge_id(1086,300); return false;">
+                      <img width="1" src="images/empty.png"><span>300</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>3&nbsp;542,95 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_1087">
+                    <td onclick="set_charge_id(1087,400); return false;">
+                      <img width="1" src="images/empty.png"><span>400</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>3&nbsp;804,14 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_647">
+                    <td onclick="set_charge_id(647,500); return false;">
+                      <img width="1" src="images/empty.png"><span>500</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>4&nbsp;065,35 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_900">
+                    <td onclick="set_charge_id(900,1000); return false;">
+                      <img width="1" src="images/empty.png"><span>1000</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>5&nbsp;371,37 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_907">
+                    <td onclick="set_charge_id(907,2500); return false;">
+                      <img width="1" src="images/empty.png"><span>2500</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>9&nbsp;289,49 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_648">
+                    <td onclick="set_charge_id(648,5000); return false;">
+                      <img width="1" src="images/empty.png"><span>5000</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>15&nbsp;819,66 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_901">
+                    <td onclick="set_charge_id(901,10000); return false;">
+                      <img width="1" src="images/empty.png"><span>10000</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>28&nbsp;317,75 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_903">
+                    <td onclick="set_charge_id(903,15000); return false;">
+                      <img width="1" src="images/empty.png"><span>15000</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>40&nbsp;815,87 р.</span>
+                    </td>
+                  </tr>
+                  <tr id="charge_905">
+                    <td onclick="set_charge_id(905,20000); return false;">
+                      <img width="1" src="images/empty.png"><span>20000</span>
+                    </td>
+                    <td class="result">
+                      <img width="1" src="images/empty.png"><span>53&nbsp;314,02 р.</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <a class="scroll down">&nbsp;</a>
+                <div id="price_infos" class="description red_color">
+                  Внимание. Цены отсутствуют.
+                </div>
+                <div id="charge_infos" class="description red_color" style="display: block;">
+                  Нажмите на выбранный тираж<br>
+                  для оформления заказа.
+                </div>
+                <!--<div id="own_charge" class="description"><a href="#" onclick="show_search_form_charge(); return false;">Указать свой тираж</a></div>-->
+              </div>
+              <input name="delay_id" id="delay_id" type="hidden" value="">
+              <input name="checkout" type="hidden" value="1">
+            </form>
+          </div>
+        </div>
+        
+        <h2>Послепечатная отделка</h2>
+        
+        <div id="calc" class="flow print-calc print-calc-2 fc">
+          <div id="steps">
+            <div id="post-press-navi">
+              <ul id="order_step" class="navi">
+                <li class="step_done step-1">
+                  <a href="/shop/index/page/1">Продукт</a>
+                </li>
+                <li class="step_current step-2">Послепечатная отделка</li>
+                <li class="step_todo step-3">Загрузка файлов</li>
+                <li class="step_todo step-4">Доставка</li>
+                <li id="step_end" class="step_todo step-5">Оплата</li>
+              </ul>
+            </div>
+            <div id="div-left" class="order-left-col">
+              <div class="order-daten">
+                <div id="order-data-left" class="order-data">
+                  <div>
+                    <div class="ttl">
+                      <a class="a-option" href="/shop/index/page/1">Буклет/Лифлет</a>
+                    </div>
+                  </div>
+                  <div class="order-dates">
+                    <div id="order-data-right" class="order-data">
+                      <div class="order-dates-item fc">
+                        <span>Запуск:</span>
+                        <div id="delay_disposal">
+                          Вт 25 фев в 11:00
+                        </div>
+                      </div>
+                      <div class="order-dates-item fc">
+                        <span>Готовность:</span>
+                        <div id="delay_pickup">
+                          Пн 3 фев в 11:00
+                        </div>
+                      </div>
+                      <div class="order-dates-item fc">
+                        <span>Цена:</span>
+                        <div id="price">
+                          2013,89 р.
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="order-details">
+                    <span>Бумага</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%)</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Paзмер</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">210 x 148</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Краски</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">Односторонняя полноцветная печать (4+0)</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Тираж</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">500</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Обязательная отделка</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/print-process">Фальцовка<br>
+                      фальц по длинной стороне</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="div-middle" class="order-middle-col">
+              
+              <div id="post-press-step">
+                <form id="form_print_process" enctype="application/x-www-form-urlencoded" autocomplete="off" action="/shop/print-process/section/" data-sec="" data-sup="2" method="post">
+                  <dl>
+                    <input type="hidden" name="type" value="order" id="type">
+                  </dl>
+                  <fieldset id="fieldset-form-parent_rillfalz" class="rs__pp">
+                    <fieldset id="fieldset-form-parent_rillfalz-xml_falzen" class="rs__pg fieldset-selected">
+                      
+                      <fieldset id="fieldset-form-parent_rillfalz-xml_falzen-431" class="rs__po">
+                        <dl>
+                          <dt id="parent_rillfalz-xml_falzen-431-wtv_active-label" class="rs__ab rs__ab__dt rs__gid-xml_falzen rs__uid-431 rs__nid-wtv_active"><label class="optional">Фальцовка</label></dt>
+                          <dd class="rs__ab rs__ab__dd rs__gid-xml_falzen rs__uid-431 rs__nid-wtv_active" id="parent_rillfalz-xml_falzen-431-wtv_active-element">
+                          <label class="styled" for="parent_rillfalz-xml_falzen-431-wtv_active-1"><input type="checkbox" name="parent_rillfalz[xml_falzen][431][wtv_active][]" id="parent_rillfalz-xml_falzen-431-wtv_active-1" value="1" checked="checked" class="rs__ab rs__ab__ab styled rs__gid-xml_falzen rs__uid-431 rs__nid-wtv_active rs__required-1" onclick="__rsCheckProcess(this, 'xml_falzen', '431', true);" data-name="wtv_active" data-unique="431" data-group="xml_falzen" data-required="1">
+                          
+                          <div class="radio_link void">
+                            <div class="radio_pict void">
+                            </div>
+                            <div class="radio_text rs__required-1">
+                              <span class="wtv_identifier">Фальцовка</span>
+                              <span class="wtv_price"> от 398,04 р.</span>
+                            </div>
+                            <div class="radio_desc void">
+                            </div>
+                          </div>
+                          </label></dd>
+                        </dl>
+                        <div class="form-row fc">
+                        	<dl>
+                        	  <dt id="parent_rillfalz-xml_falzen-431-option1-label" class="rs__el rs__el__dt rs__gid-xml_falzen rs__uid-431 rs__nid-option1"></dt>
+                        	  <dd class="rs__el rs__el__dd rs__gid-xml_falzen rs__uid-431 rs__nid-option1" id="parent_rillfalz-xml_falzen-431-option1-element">
+                        	  <select name="parent_rillfalz[xml_falzen][431][option1]" id="parent_rillfalz-xml_falzen-431-option1" onchange="__rsChangeProcess(this, 'xml_falzen', '431');" class="rs__el rs__el__el rs__gid-xml_falzen rs__uid-431 rs__nid-option1 rs__required-1" data-name="option1" data-unique="431" data-group="xml_falzen">
+                        	    <option value="pso_lang_1" label="Фальц по короткой стороне [+ 398,04 р.]">Фальц по короткой стороне [+ 398,04 р.]</option>
+                        	    <option value="pso_kurz_1" label="Фальц по длинной стороне [+ 398,04 р.]" selected="selected">Фальц по длинной стороне [+ 398,04 р.]</option>
+                        	    <option value="pso_zickzack_2" label="Фальц зигзаг (6 страниц) [+ 447,70 р.]">Фальц зигзаг (6 страниц) [+ 447,70 р.]</option>
+                        	    <option value="pso_wickel_2" label="Фальц лифлет (6 страниц) [+ 447,70 р.]">Фальц лифлет (6 страниц) [+ 447,70 р.]</option>
+                        	  </select>
+                        	  </dd>
+                        	</dl>
+                        	<dl class="fold_show">
+                        	  <img class="product_image" src="images/fold.png" alt="">
+                        	</dl>
+                        </div>
+                      </fieldset>
+                    </fieldset>
+                  </fieldset>
+                  <fieldset id="fieldset-form-parent" class="rs__pp">
+                    <fieldset id="fieldset-form-parent-grp_425" class="rs__pg">
+                      
+                      <fieldset id="fieldset-form-parent-grp_425-425" class="rs__po">
+                        <dl>
+                          <dt id="parent-grp_425-425-wtv_active-label" class="rs__ab rs__ab__dt rs__gid-grp_425 rs__uid-425 rs__nid-wtv_active"><label class="optional">Скругление углов</label></dt>
+                          <dd class="rs__ab rs__ab__dd rs__gid-grp_425 rs__uid-425 rs__nid-wtv_active" id="parent-grp_425-425-wtv_active-element">
+                          <label class="styled" for="parent-grp_425-425-wtv_active-1"><input type="checkbox" name="parent[grp_425][425][wtv_active][]" id="parent-grp_425-425-wtv_active-1" value="1" class="rs__ab rs__ab__ab styled rs__gid-grp_425 rs__uid-425 rs__nid-wtv_active" onclick="__rsCheckProcess(this, 'grp_425', '425', false);" data-name="wtv_active" data-unique="425" data-group="grp_425">
+                          
+                          <div class="radio_link void">
+                            <div class="radio_pict void">
+                            </div>
+                            <div class="radio_text rs__required-0">
+                              <span class="wtv_identifier">Скругление углов</span>
+                              <span class="wtv_price"> от 439,83 р.</span>
+                            </div>
+                            <div class="radio_desc void">
+                            </div>
+                          </div>
+                          </label></dd>
+                        </dl>
+                        <div class="form-row fc">
+                        	<dl>
+                        	  <dt id="parent-grp_425-425-counter1-label" class="rs__el rs__el__dt rs__gid-grp_425 rs__uid-425 rs__nid-counter1 disabled"><label for="parent-grp_425-425-counter1" class="optional">Eckenanzahl</label></dt>
+                        	  <dd class="rs__el rs__el__dd rs__gid-grp_425 rs__uid-425 rs__nid-counter1 disabled" id="parent-grp_425-425-counter1-element">
+                        	  <select name="parent[grp_425][425][counter1]" id="parent-grp_425-425-counter1" onchange="__rsChangeProcess(this, 'grp_425', '425');" class="disabled rs__el rs__el__el rs__gid-grp_425 rs__uid-425 rs__nid-counter1" disabled="disabled" data-name="counter1" data-unique="425" data-group="grp_425">
+                        	    <option value="count_1" label="1 Угол [+ 439,83 р.]">1 Угол [+ 439,83 р.]</option>
+                        	    <option value="count_2" label="2 Угла [+ 524,81 р.]">2 Угла [+ 524,81 р.]</option>
+                        	    <option value="count_3" label="3 Угла [+ 609,75 р.]">3 Угла [+ 609,75 р.]</option>
+                        	    <option value="count_4" label="4 Угла [+ 666,41 р.]">4 Угла [+ 666,41 р.]</option>
+                        	  </select>
+                        	  </dd>
+                        	</dl>
+                        	<dl class="dl-narrow">
+                        	  <dt id="parent-grp_425-425-option1-label" class="rs__el rs__el__dt rs__gid-grp_425 rs__uid-425 rs__nid-option1 disabled"><label for="parent-grp_425-425-option1" class="optional">Eckenradius</label></dt>
+                        	  <dd class="rs__el rs__el__dd rs__gid-grp_425 rs__uid-425 rs__nid-option1 disabled" id="parent-grp_425-425-option1-element">
+                        	  <select name="parent[grp_425][425][option1]" id="parent-grp_425-425-option1" onchange="__rsChangeProcess(this, 'grp_425', '425');" class="disabled rs__el rs__el__el rs__gid-grp_425 rs__uid-425 rs__nid-option1" disabled="disabled" data-name="option1" data-unique="425" data-group="grp_425">
+                        	    <option value="ecke_3" label="3mm">3mm</option>
+                        	    <option value="ecke_5" label="5mm">5mm</option>
+                        	    <option value="ecke_7" label="7mm">7mm</option>
+                        	    <option value="ecke_9" label="9mm">9mm</option>
+                        	  </select>
+                        	  </dd>
+                        	</dl>
+                        </div>
+                      </fieldset>
+                    </fieldset>
+                    <fieldset id="fieldset-form-parent-grp_424" class="rs__pg">
+                      
+                      <fieldset id="fieldset-form-parent-grp_424-424" class="rs__po">
+                        <dl>
+                          <dt id="parent-grp_424-424-wtv_active-label" class="rs__ab rs__ab__dt rs__gid-grp_424 rs__uid-424 rs__nid-wtv_active"><label class="optional">Сверление</label></dt>
+                          <dd class="rs__ab rs__ab__dd rs__gid-grp_424 rs__uid-424 rs__nid-wtv_active" id="parent-grp_424-424-wtv_active-element">
+                          <label class="styled" for="parent-grp_424-424-wtv_active-1"><input type="checkbox" name="parent[grp_424][424][wtv_active][]" id="parent-grp_424-424-wtv_active-1" value="1" class="rs__ab rs__ab__ab styled rs__gid-grp_424 rs__uid-424 rs__nid-wtv_active" onclick="__rsCheckProcess(this, 'grp_424', '424', false);" data-name="wtv_active" data-unique="424" data-group="grp_424">
+                          
+                          <div class="radio_link void">
+                            <div class="radio_pict void">
+                            </div>
+                            <div class="radio_text rs__required-0">
+                              <span class="wtv_identifier">Сверление</span>
+                              <span class="wtv_price"> от 265,67 р.</span>
+                            </div>
+                            <div class="radio_desc void">
+                            </div>
+                          </div>
+                          </label></dd>
+                        </dl>
+                        <div class="form-row fc">
+                        	<dl>
+                        	  <dt id="parent-grp_424-424-counter1-label" class="rs__el rs__el__dt rs__gid-grp_424 rs__uid-424 rs__nid-counter1 disabled"><label for="parent-grp_424-424-counter1" class="optional">Bohrung</label></dt>
+                        	  <dd class="rs__el rs__el__dd rs__gid-grp_424 rs__uid-424 rs__nid-counter1 disabled" id="parent-grp_424-424-counter1-element">
+                        	  <select name="parent[grp_424][424][counter1]" id="parent-grp_424-424-counter1" onchange="__rsChangeProcess(this, 'grp_424', '424');" class="disabled rs__el rs__el__el rs__gid-grp_424 rs__uid-424 rs__nid-counter1" disabled="disabled" data-name="counter1" data-unique="424" data-group="grp_424">
+                        	    <option value="count_1" label="1 Отверстие [+ 265,67 р.]">1 Отверстие [+ 265,67 р.]</option>
+                        	    <option value="count_2" label="2 Отверстия [+ 365,07 р.]">2 Отверстия [+ 365,07 р.]</option>
+                        	    <option value="count_3" label="3 Отверстия [+ 541,81 р.]">3 Отверстия [+ 541,81 р.]</option>
+                        	    <option value="count_4" label="4 Отверстия [+ 762,69 р.]">4 Отверстия [+ 762,69 р.]</option>
+                        	  </select>
+                        	  </dd>
+                        	</dl>
+                        	<dl class="dl-narrow">
+                        	  <dt id="parent-grp_424-424-option1-label" class="rs__el rs__el__dt rs__gid-grp_424 rs__uid-424 rs__nid-option1 disabled"><label for="parent-grp_424-424-option1" class="optional">Bohrdurchmesser</label></dt>
+                        	  <dd class="rs__el rs__el__dd rs__gid-grp_424 rs__uid-424 rs__nid-option1 disabled" id="parent-grp_424-424-option1-element">
+                        	  <select name="parent[grp_424][424][option1]" id="parent-grp_424-424-option1" onchange="__rsChangeProcess(this, 'grp_424', '424');" class="disabled rs__el rs__el__el rs__gid-grp_424 rs__uid-424 rs__nid-option1" disabled="disabled" data-name="option1" data-unique="424" data-group="grp_424">
+                        	    <option value="bohrdm_3" label="3.0мм">3.0мм</option>
+                        	    <option value="bohrdm_4" label="4.0мм">4.0мм</option>
+                        	    <option value="bohrdm_5" label="5.0мм">5.0мм</option>
+                        	    <option value="bohrdm_6" label="6.0мм">6.0мм</option>
+                        	    <option value="bohrdm_7" label="7.0мм">7.0мм</option>
+                        	    <option value="bohrdm_8" label="8.0мм">8.0мм</option>
+                        	  </select>
+                        	  </dd>
+                        	</dl>
+                        </div>
+                      </fieldset>
+                    </fieldset>
+                    <fieldset id="fieldset-form-parent-grp_423" class="rs__pg">
+                      
+                      <fieldset id="fieldset-form-parent-grp_423-423" class="rs__po">
+                        <dl>
+                          <dt id="parent-grp_423-423-wtv_active-label" class="rs__ab rs__ab__dt rs__gid-grp_423 rs__uid-423 rs__nid-wtv_active"><label class="optional">Перфорация</label></dt>
+                          <dd class="rs__ab rs__ab__dd rs__gid-grp_423 rs__uid-423 rs__nid-wtv_active" id="parent-grp_423-423-wtv_active-element">
+                          <label class="styled" for="parent-grp_423-423-wtv_active-1"><input type="checkbox" name="parent[grp_423][423][wtv_active][]" id="parent-grp_423-423-wtv_active-1" value="1" class="rs__ab rs__ab__ab styled rs__gid-grp_423 rs__uid-423 rs__nid-wtv_active" onclick="__rsCheckProcess(this, 'grp_423', '423', false);" data-name="wtv_active" data-unique="423" data-group="grp_423">
+                          
+                          <div class="radio_link void">
+                            <div class="radio_pict void">
+                            </div>
+                            <div class="radio_text rs__required-0">
+                              <span class="wtv_identifier">Перфорация</span>
+                              <span class="wtv_price"> от 713,59 р.</span>
+                            </div>
+                            <div class="radio_desc void">
+                            </div>
+                          </div>
+                          </label></dd>
+                        </dl>
+                        <dl>
+                          <dt id="parent-grp_423-423-counter1-label" class="rs__el rs__el__dt rs__gid-grp_423 rs__uid-423 rs__nid-counter1 disabled">&nbsp;</dt>
+                          <dd class="rs__el rs__el__dd rs__gid-grp_423 rs__uid-423 rs__nid-counter1 disabled" id="parent-grp_423-423-counter1-element">
+                          <select name="parent[grp_423][423][counter1]" id="parent-grp_423-423-counter1" onchange="__rsChangeProcess(this, 'grp_423', '423');" class="disabled rs__el rs__el__el rs__gid-grp_423 rs__uid-423 rs__nid-counter1" disabled="disabled" data-name="counter1" data-unique="423" data-group="grp_423">
+                            <option value="count_1" label="1 Перфорация [+ 713,59 р.]">1 Перфорация [+ 713,59 р.]</option>
+                            <option value="count_2" label="2 Перфорации [+ 1&nbsp;020,41 р.]">2 Перфорации [+ 1&nbsp;020,41 р.]</option>
+                            <option value="count_3" label="3 Перфорации [+ 1&nbsp;634,01 р.]">3 Перфорации [+ 1&nbsp;634,01 р.]</option>
+                            <option value="count_4" label="4 Перфорации [+ 1&nbsp;634,01 р.]">4 Перфорации [+ 1&nbsp;634,01 р.]</option>
+                          </select>
+                          </dd>
+                        </dl>
+                      </fieldset>
+                    </fieldset>
+                    <fieldset id="fieldset-form-parent-grp_529" class="rs__pg">
+                      
+                      <fieldset id="fieldset-form-parent-grp_529-529" class="rs__po">
+                        <dl>
+                          <dt id="parent-grp_529-529-wtv_active-label" class="rs__ab rs__ab__dt rs__gid-grp_529 rs__uid-529 rs__nid-wtv_active"><label class="optional">Доработка макета</label></dt>
+                          <dd class="rs__ab rs__ab__dd rs__gid-grp_529 rs__uid-529 rs__nid-wtv_active" id="parent-grp_529-529-wtv_active-element">
+                          <label class="styled" for="parent-grp_529-529-wtv_active-1"><input type="checkbox" name="parent[grp_529][529][wtv_active][]" id="parent-grp_529-529-wtv_active-1" value="1" class="rs__ab rs__ab__ab styled rs__gid-grp_529 rs__uid-529 rs__nid-wtv_active" onclick="__rsCheckProcess(this, 'grp_529', '529', false);" data-name="wtv_active" data-unique="529" data-group="grp_529">
+                          
+                          <div class="radio_link void">
+                            <div class="radio_pict void">
+                            </div>
+                            <div class="radio_text rs__required-0">
+                              <span class="wtv_identifier">Доработка макета</span>
+                              <span class="wtv_price"> - 320,00 р.</span>
+                            </div>
+                          </div>
+                          </label></dd>
+                        </dl>
+                        <dl>
+                          <dt id="parent-grp_529-529-option1-label" class="rs__el rs__el__dt rs__gid-grp_529 rs__uid-529 rs__nid-option1 disabled"><label for="parent-grp_529-529-option1" class="optional">Доработка макета</label></dt>
+                          <dd class="rs__el rs__el__dd rs__gid-grp_529 rs__uid-529 rs__nid-option1 disabled" id="parent-grp_529-529-option1-element">
+                          <textarea rows="4" name="parent[grp_529][529][option1]" id="parent-grp_529-529-option1" value="" placeholder="Ваш комментарий" onchange="__rsChangeProcess(this, 'grp_529', '529');" class="disabled rs__el rs__el__el rs__gid-grp_529 rs__uid-529 rs__nid-option1" data-name="option1" data-unique="529" data-group="grp_529"></textarea></dd>
+                        </dl>
+                      </fieldset>
+                    </fieldset>
+                    <fieldset id="fieldset-form-parent-grp_530" class="rs__pg">
+                      
+                      <fieldset id="fieldset-form-parent-grp_530-530" userinteraction="" class="rs__po">
+                        <dl>
+                          <dt id="parent-grp_530-530-wtv_active-label" class="rs__ab rs__ab__dt rs__gid-grp_530 rs__uid-530 rs__nid-wtv_active"><label class="optional">Создание макета</label></dt>
+                          <dd class="rs__ab rs__ab__dd rs__gid-grp_530 rs__uid-530 rs__nid-wtv_active" id="parent-grp_530-530-wtv_active-element">
+                          <label class="styled" for="parent-grp_530-530-wtv_active-1"><input type="checkbox" name="parent[grp_530][530][wtv_active][]" id="parent-grp_530-530-wtv_active-1" value="1" class="rs__ab rs__ab__ab styled rs__gid-grp_530 rs__uid-530 rs__nid-wtv_active" onclick="__rsCheckProcess(this, 'grp_530', '530', false);" data-name="wtv_active" data-unique="530" data-group="grp_530">
+                          
+                          <div class="radio_link void">
+                            <div class="radio_pict void">
+                            </div>
+                            <div class="radio_text rs__required-0">
+                              <span class="wtv_identifier">Создание макета</span>
+                              <span class="wtv_price"> - 2&nbsp;390,00 р.</span>
+                            </div>
+                            <div class="manual-link">
+                            	Инструкцию и бланк технического задания можно <a target="_blank" href="http://content.printomat.ru/upload/FileUpload/files/booklet-liflet.zip">скачать тут</a>
+                            </div>
+                          </div>
+                          </label></dd>
+                        </dl>
+                      </fieldset>
+                    </fieldset>
+                    
+                    <div class="calc-buttons">
+                      <a href="/shop/index/page/1" class="button button-3 button-back">назад</a>
+                      <button id="wtv_button" class="button button-2 button-forward next back_next_button" onclick="set_wtv(); return false;"><i class="tl"></i><i class="tr"></i><i class="br"></i><i class="bl"></i>продолжить</button>
+                    </div>
+                    
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <h2>Загрузка файлов</h2>
+        
+        <div id="calc" class="flow print-calc print-calc-2 fc">
+          <div id="steps">
+            <div id="post-press-navi">
+              <ul id="order_step" class="navi">
+                <li class="step_done step-1">
+                    <a href="/shop/index/page/1">Продукт</a>
+                </li>
+                <li class="step_done step-2">
+                    <a href="/shop/print-process">Послепечатная отделка</a>
+                </li>
+                <li class="step_current step-3">Загрузка файлов</li>
+                <li class="step_todo step-4">Доставка</li>
+                <li id="step_end" class="step_todo step-5">Оплата</li>
+            </ul>
+            </div>
+            <div id="div-left" class="order-left-col">
+              <div class="order-daten">
+                <div id="order-data-left" class="order-data">
+                  <div>
+                    <div class="ttl">
+                      <a class="a-option" href="/shop/index/page/1">Буклет/Лифлет</a>
+                    </div>
+                  </div>
+                  <div class="order-dates">
+                    <div id="order-data-right" class="order-data">
+                      <div class="order-dates-item fc">
+                        <span>Запуск:</span>
+                        <div id="delay_disposal">
+                          Вт 25 фев в 11:00
+                        </div>
+                      </div>
+                      <div class="order-dates-item fc">
+                        <span>Готовность:</span>
+                        <div id="delay_pickup">
+                          Пн 3 фев в 11:00
+                        </div>
+                      </div>
+                      <div class="order-dates-item fc">
+                        <span>Цена:</span>
+                        <div id="price">
+                          2013,89 р.
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="order-details">
+                    <span>Бумага</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%)</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Paзмер</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">210 x 148</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Краски</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">Односторонняя полноцветная печать (4+0)</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Тираж</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">500</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Обязательная отделка</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/print-process">Фальцовка<br>
+                      фальц по длинной стороне</a>
+                    </div>
+                  </div>
+                  <div class="order-details order-details-alt">
+                    <span>Послепечатная отделка</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/print-process">
+                        <span>Фальцовка - фальц лифлет (6 страниц)</span>
+                        <span>Сверление - 1 отверстие 3.0мм</span>
+                        <span>Перфорация - 1 перфорация</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="div-middle" class="order-middle-col">
+              <div class="div-upload-options">
+                <h3 class="a-center">Выберите следующее действие:</h3>
+                <form id="print_options" action="#">
+                  <div class="print_option">
+                    <div class="print_option_1">
+                      <input type="radio" name="print_option" value="3" checked="checked" onchange="$('#type').val(''); $('#form_print_upload').show(); $('#instructions').show(); $('#upload-tip').show(); $('#tip').hide(); $('#option-1').hide(); $('#option-2').hide(); return false;">
+                    </div>
+                    <div class="print_option_2">
+                      Загрузка макетов
+                    </div>
+                  </div>
+                  <div class="print_option">
+                    <div class="print_option_1">
+                      <input type="radio" name="print_option" value="2" onchange="$('#type').val('offer'); $('#form_print_upload').hide(); $('#instructions').hide(); $('#upload-tip').hide(); $('#tip').show(); $('#option-1').show(); $('#option-2').hide(); return false;">
+                    </div>
+                    <div class="print_option_2">
+                      Сохранение параметров заказа (без информации о доставке)
+                    </div>
+                  </div>
+                  <div class="print_option">
+                    <div class="print_option_1">
+                      <input type="radio" name="print_option" value="1" onchange="$('#type').val('offer;addr'); $('#form_print_upload').hide(); $('#instructions').hide(); $('#upload-tip').hide(); $('#tip').show(); $('#option-1').hide(); $('#option-2').show(); return false;">
+                    </div>
+                    <div class="print_option_2">
+                      Сохранение параметров заказа (вкл. информацию о доставке)
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <form id="form_print_upload" enctype="multipart/form-data" autocomplete="off" method="post" action="/shop/print-upload">
+                <fieldset id="fieldset-upload">
+                  <fieldset id="uploader-left">
+                    <legend>Файлы для печати</legend>
+                    <div id="file-uploader-print" class="qq-area">
+                      <div class="qq-uploader">
+                        <div class="qq-upload-drop-area" style="display: none;">
+                          <span>Пожалуйста, перенесите Ваши файлы сюда!</span>
+                        </div>
+                        <div class="qq-upload-button">
+                          <input multiple="multiple" type="file" name="file">
+                          <div class="form-tooltip-trigger"></div>
+                          <div class="tooltip form-tooltip">
+                            <div class="tooltip-cont">Это текстовое поле, в которое, очевидно, нужно вводить текст. Если рядом с названием поля стоит красная звездочка, то поле обязательное.</div>
+                          </div>
+                        </div>
+                        <ul class="qq-upload-list">
+                          <li class="file-upl-elem qq-upload-success">
+                          <div class="upload-img">
+                            <div class="qq-upload-img">
+                              <img id="refresh_img_0" src="files/file-tmb.jpg">
+                            </div>
+                          </div>
+                          <div class="upload-txt">
+                            <div class="qq-upload-file">
+                              booking_confirm.pdf
+                            </div>
+                            <div class="qq-upload-size" style="display: inline;">
+                              (158.4kB)
+                            </div>
+                            <div class="qq-upload-cancel-text">
+                            </div>
+                            <div class="qq-upload-failed-text">
+                              Ошибка загрузки
+                            </div>
+                            <div class="qq-upload-success-text">
+                              <a href="#" class="qq-upload-success">Удалить</a>
+                              <div class="page-selector">
+                                <select onchange="$.get('/shop/fileoption/hash/' + $(this).data('hash') + '/option/' + $(this).val() + '/file/' + $(this).data('file'));" class="require-data">
+                                  <option value="">Выберите сторону</option>
+                                  <option value="both">Обе стороны</option>
+                                  <option value="front">Лицевая сторона</option>
+                                  <option value="back">Оборотная сторона</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="file-uploader-hint">
+                        <ol>
+                          <li>Максимально допустимый размер файла: 150 МБ</li>
+                          <li>Допустимые форматы файлов: PDF, AI, EPS, INDD, TIF, TIFF, CDR, ZIP, JPG</li>
+                          <li>В именах файлов допустимы только латинские буквы (A-Z, a-z) и цифры (0-9) без пробелов и специальных символов</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset id="uploader-right">
+                    <legend>Файлы для просмотра</legend>
+                    <div id="file-uploader-show" class="qq-area">
+                      <div class="qq-uploader">
+                        <div class="qq-upload-drop-area" style="display: none;">
+                          <span>Пожалуйста, перенесите Ваши файлы сюда!</span>
+                        </div>
+                        <div class="qq-upload-button" style="position: relative; overflow: hidden; direction: ltr;">
+                          <p>
+                            <img class="button" src="images/form-tooltip-trigger.png" onclick="show_files_infos('show-files'); return false;">
+                          </p>
+                          <p id="show-files">
+                            Загрузка файлов для просмотра не обязательна, но желательна в случае выбора дополнительной послепечатной отделки.
+                          </p>
+                          <input multiple="multiple" type="file" name="inputfile" style="right: 0px; top: 0px; font-family: Arial; padding: 0px; cursor: pointer;">
+                        </div>
+                        <ul class="qq-upload-list">
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </fieldset>
+                </fieldset>
+                <dl>
+                  <input type="hidden" name="type" value="order" id="type">
+                </dl>
+                <dl>
+                  <input type="hidden" name="hash" value="f933b273e0d857d6ffe2a619d6d15c92" id="hash">
+                </dl>
+                <fieldset id="fieldset-upload_comment">
+                  <h3>Дополнительная информация</h3>
+                  <dl>
+                    <dt id="designation-label"><label for="designation" class="optional">Ваш маркер</label></dt>
+                    <dd id="designation-element">
+                    <input type="text" name="designation" id="designation" value="" size="32" maxlength="50">
+                    <div class="form-tooltip-trigger"></div>
+                    <div class="tooltip form-tooltip">
+                      <div class="tooltip-cont">
+                        Укажите здесь свой собственный маркер к продукту. Данное обозначение поможет Вам быстро сориентирваться в содержимом корзины при дальнейшем оформлении заказа.
+                      </div>
+                    </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="comment-label"><label for="comment" class="optional">Ваш комментарий</label></dt>
+                    <dd id="comment-element">
+                    <textarea name="comment" id="comment" rows="3" wrap="off"></textarea>
+                    <div class="form-tooltip-trigger"></div>
+                    <div class="tooltip form-tooltip">
+                      <div class="tooltip-cont">
+                        Вы хотели бы отправить нам дополнительную информацию о макете? Укажите ее здесь.
+                      </div>
+                    </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="email-label"><label for="email" class="optional">Email адрес (проверка макета)</label></dt>
+                    <dd id="email-element">
+                    <input type="text" name="email" id="email" value="" size="32" maxlength="50">
+                    <div class="form-tooltip-trigger"></div>
+                    <div class="tooltip form-tooltip">
+                      <div class="tooltip-cont">
+                        Укажите здесь email адрес для контакта в случае возникновения вопросов по загруженному макету.
+                      </div>
+                    </div>
+                    </dd>
+                  </dl>
+                </fieldset>
+                
+                <div class="calc-buttons">
+                  <a href="/shop/index/page/1" class="button button-3 button-back">назад</a>
+                  <button id="wtv_button" class="button button-2 button-forward next back_next_button" onclick="set_wtv(); return false;"><i class="tl"></i><i class="tr"></i><i class="br"></i><i class="bl"></i>продолжить</button>
+                </div>
+                
+              </form>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+        <h2>Доставка</h2>
+        
+        <div id="calc" class="flow print-calc print-calc-2 fc">
+          <div id="steps">
+            <div id="post-press-navi">
+              <ul id="order_step" class="navi">
+                <li class="step_done step-1">
+                    <a href="/shop/index/page/1">Продукт</a>
+                </li>
+                <li class="step_done step-2">
+                    <a href="/shop/print-process">Послепечатная отделка</a>
+                </li>
+                <li class="step_done step-3">
+                    <a href="/shop/print-upload">Загрузка файлов</a>
+                </li>
+                <li class="step_current step-4">Доставка</li>
+                <li id="step_end" class="step_todo step-5">Оплата</li>
+              </ul>
+            </div>
+            <div id="div-left" class="order-left-col">
+              <div class="order-daten">
+                <div id="order-data-left" class="order-data">
+                  <div>
+                    <div class="ttl">
+                      <a class="a-option" href="/shop/index/page/1">Буклет/Лифлет</a>
+                    </div>
+                  </div>
+                  <div class="order-dates">
+                    <div id="order-data-right" class="order-data">
+                      <div class="order-dates-item fc">
+                        <span>Запуск:</span>
+                        <div id="delay_disposal">
+                          Вт 25 фев в 11:00
+                        </div>
+                      </div>
+                      <div class="order-dates-item fc">
+                        <span>Готовность:</span>
+                        <div id="delay_pickup">
+                          Пн 3 фев в 11:00
+                        </div>
+                      </div>
+                      <div class="order-dates-item fc">
+                        <span>Цена:</span>
+                        <div id="price">
+                          2013,89 р.
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="order-details">
+                    <span>Бумага</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%)</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Paзмер</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">210 x 148</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Краски</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">Односторонняя полноцветная печать (4+0)</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Тираж</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/index/page/1">500</a>
+                    </div>
+                  </div>
+                  <div class="order-details">
+                    <span>Обязательная отделка</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/print-process">Фальцовка<br>
+                      фальц по длинной стороне</a>
+                    </div>
+                  </div>
+                  <div class="order-details order-details-alt">
+                    <span>Послепечатная отделка</span>
+                    <br>
+                    <div>
+                      <a class="a-option" href="/shop/print-process">
+                        <span>Фальцовка - фальц лифлет (6 страниц)</span>
+                        <span>Сверление - 1 отверстие 3.0мм</span>
+                        <span>Перфорация - 1 перфорация</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="order-details order-details-alt">
+                    <span>Прикрепленные файлы</span>
+                    <br>
+                    <div>
+                      <div class="attachments-list">
+                        <div class="al-item fc">
+                          <div class="pic">
+                            <a href="#"><img src="files/file-tmb.jpg"/></a>
+                          </div>
+                          <div class="descr">
+                            <div class="file-name">Семья веселых утят на прогулке летним днем.pdf</div>
+                            <div class="file-size">186.4 kB</div>
+                            <div class="file-side">
+                              лицевая сторона
+                            </div>
+                          </div>
+                        </div>
+                        <div class="al-item fc">
+                          <div class="pic">
+                            <a href="#"><img src="files/file-tmb.jpg"/></a>
+                          </div>
+                          <div class="descr">
+                            <div class="file-name">Семья веселых утят на прогулке летним днем.pdf</div>
+                            <div class="file-size">186.4 kB</div>
+                            <div class="file-side">
+                              оборотная сторона
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="div-middle" class="order-middle-col">
+              
+              <form id="form_shipping" enctype="application/x-www-form-urlencoded" autocomplete="off" action="/shop/shipping" method="post">
+                <dl>
+                  <input type="hidden" name="type" value="order" id="type">
+                </dl>
+                <dl>
+                  <input type="hidden" name="addrcount[formCounter_1]" value="1" id="addrcount-formCounter_1">
+                </dl>
+                <fieldset id="fieldset-shipping_pickup">
+                  <dl>
+                    <dt id="pickup-label"><label class="optional">Выберите способ доставки:</label></dt>
+                    <dd id="pickup-element">
+                    <label class="styled" for="pickup-pickup"><input type="radio" name="pickup" id="pickup-pickup" value="pickup" checked="checked" onclick="__rsChangePickup(this);" class="styled">Самовывоз</label><label class="styled" for="pickup-shipping"><input type="radio" name="pickup" id="pickup-shipping" value="shipping" onclick="__rsChangePickup(this);" class="styled">Доставка по адресу</label></dd>
+                  </dl>
+                </fieldset>
+                <fieldset id="fieldset-form-address_1" class="address_block" data-count="1" style="display: none;">
+                  <legend style="display: none;">1-я часть тиража</legend>
+                  
+                  <fieldset id="fieldset-address_1" class="address" style="display: none;">
+                    <h3>Адрес грузополучателя</h3>
+                    <dl>
+                      <dt id="address_1-select-label"><label for="address_1-select" class="optional">Адресная книга</label></dt>
+                      <dd id="address_1-select-element">
+                      <select name="address_1[select]" id="address_1-select" onchange="__rsPrefillAddress(this);" onkeyup="this.blur(); this.focus();" class="rs__select">
+                        <option value="0" label="Новый, не сохраненный адрес" selected="selected">Новый, не сохраненный адрес</option>
+                      </select>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-title-label"><label for="address_1-title" class="optional">Физ / Юр лицо<span class="req">*</span></label></dt>
+                      <dd id="address_1-title-element">
+                      <select name="address_1[title]" id="address_1-title" class="rs__title" required>
+                        <option value="Herr" label="Господин">Господин</option>
+                        <option value="Frau" label="Госпожа">Госпожа</option>
+                        <option value="Firma" label="Юридическое лицо">Юридическое лицо</option>
+                      </select>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-firstname-label"><label for="address_1-firstname" class="optional">Имя<span class="req">*</span></label></dt>
+                      <dd id="address_1-firstname-element">
+                      <input type="text" name="address_1[firstname]" id="address_1-firstname" value="" size="32" maxlength="100" class="rs__firstname" required></dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-lastname-label"><label for="address_1-lastname" class="optional">Фамилия<span class="req">*</span></label></dt>
+                      <dd id="address_1-lastname-element">
+                      <input type="text" name="address_1[lastname]" id="address_1-lastname" value="" size="32" maxlength="100" class="rs__lastname" required></dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-company-label"><label for="address_1-company" class="optional">Название фирмы<span class="req">*</span></label></dt>
+                      <dd id="address_1-company-element">
+                      <input type="text" name="address_1[company]" id="address_1-company" value="" size="32" maxlength="100" class="rs__company" required>
+                      <div class="form-tooltip-trigger"></div>
+                        <div class="tooltip form-tooltip">
+                          <div class="tooltip-cont">Укажите здесь полное наименование Вашей фирмы, например ООО "Печатаем Вместе".<br>
+                        Индивидуальным предпринимателям здесь нужно указать сокращение ИП и далее Вашу фамилию и инициалы.</div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-street-label"><label for="address_1-street" class="required">Улица</label></dt>
+                      <dd id="address_1-street-element">
+                      <input type="text" name="address_1[street]" id="address_1-street" value="" size="32" maxlength="100" class="rs__street"></dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-streetnr-label"><label for="address_1-streetnr" class="required">Номер дома</label></dt>
+                      <dd id="address_1-streetnr-element">
+                      <input type="text" name="address_1[streetnr]" id="address_1-streetnr" value="" size="32" maxlength="100" class="rs__streetnr"></dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-iso_country-label"><label for="address_1-iso_country" class="required">Страна</label></dt>
+                      <dd id="address_1-iso_country-element">
+                      <select name="address_1[iso_country]" id="address_1-iso_country" onchange="__rsGetDelivery(this);" class="rs__iso_country">
+                        <option value="RU" label="Россия">Россия</option>
+                      </select>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-zipcode-label"><label for="address_1-zipcode" class="required">Индекс</label></dt>
+                      <dd id="address_1-zipcode-element">
+                      <input type="text" name="address_1[zipcode]" id="address_1-zipcode" value="" size="32" maxlength="100" onchange="__rsGetDelivery(this);" class="rs__zipcode"></dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-city-label"><label for="address_1-city" class="required">Город</label></dt>
+                      <dd id="address_1-city-element">
+                      <input type="text" name="address_1[city]" id="address_1-city" value="" size="32" maxlength="100" class="rs__city"></dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-area-label"><label for="address_1-area" class="optional">Область</label></dt>
+                      <dd id="address_1-area-element">
+                      <input type="text" name="address_1[area]" id="address_1-area" value="" size="32" maxlength="100" class="rs__area rs__regiondetail"></dd>
+                    </dl>
+                  </fieldset>
+                  <fieldset id="fieldset-contact_1" class="contact" style="display: none;">
+                    <h3>Контакты</h3>
+                    <dl>
+                      <dt id="address_1-email-label"><label for="address_1-email" class="optional">Email адрес</label></dt>
+                      <dd id="address_1-email-element" class="email">
+                      <input type="text" name="address_1[email]" id="address_1-email" value="" size="32" maxlength="100" class="rs__email">
+                      <div class="form-tooltip-trigger"></div>
+                      <div class="tooltip form-tooltip">
+                        <div class="tooltip-cont">Укажите здесь email адрес для контакта в случае возникновения вопросов по выбранному способу доставки.</div>
+                      </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-phone2-label"><label for="address_1-phone2" class="optional">Телефон</label></dt>
+                      <dd id="address_1-phone2-element">
+                      <input type="text" name="address_1[phone2]" id="address_1-phone2" value="" class="rs__phone2" size="32" maxlength="100"></dd>
+                    </dl>
+                    <dl>
+                      <dt id="address_1-phone1-label"><label for="address_1-phone1" class="optional">Моб. телефон</label></dt>
+                      <dd id="address_1-phone1-element">
+                        <input type="text" name="address_1[phone1]" id="address_1-phone1" value="" class="rs__phone1" size="32" maxlength="100">
+                        <div class="form-tooltip-trigger"></div>
+                        <div class="tooltip form-tooltip">
+                          <div class="tooltip-cont">Укажите здесь контактный номер телефона в случае возникновения вопросов по выбранному способу доставки.</div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </fieldset>
+                  <fieldset id="fieldset-shipping_1" class="shipping" style="display: none;">
+                    <h3>Отправка заказа</h3>
+                    <dl>
+                      <dt id="address_1-versand-label"><label for="address_1-versand" class="required">Дата отправки</label></dt>
+                      <dd id="address_1-versand-element">
+                      <input type="text" name="address_1[versand]" id="address_1-versand" value="14-03-2014" size="32" maxlength="100" class="rs__versand form-date"></dd>
+                    </dl>
+                  </fieldset>
+                  <fieldset id="fieldset-deliver_adr_1" class="deliver_adr" style="display: none;">
+                    <h3>Выберите способ доставки</h3>
+                    <div class="form-item form-radios fc">
+                    <label for="form_radios_alt_1">
+                      <input type="radio" name="form_radios_alt" id="form_radios_alt_1" class="form-radio" checked />Стандарт
+                      <div class="radio-hint">
+                        пн-пт с 9:00 до 18:00<br />
+                        828,36 р.
+                      </div>
+                    </label>
+                    <label for="form_radios_alt_2">
+                      <input type="radio" name="form_radios_alt" id="form_radios_alt_2" class="form-radio"/>Эконом
+                      <div class="radio-hint">
+                        пн-пт с 9:00 до 18:00<br />
+                        828,36 р.
+                      </div>
+                    </label>
+                    <label for="form_radios_alt_3">
+                      <input type="radio" name="form_radios_alt" id="form_radios_alt_3" class="form-radio"/>Экспресс
+                      <div class="radio-hint">
+                        пн-пт с 9:00 до 18:00<br />
+                        828,36 р.
+                      </div>
+                    </label>
+                  </div>
+                  </fieldset>
+                </fieldset>
+              </form>
+              
+              <div id="delivery_info">
+                <h3>Получить заказ можно в будни по адресу:</h3>
+                <p>
+                	Москва, Нижний Сусальный пер., д. 5, стр. 10 (м. Курская, территория завода "Арма").
+                </p>
+                <p>
+                	Въезд на территорию на автомобиле платный и оплачивается либо на проходной завода (150 р.) либо непосредственно в офисе (100 р.). Вход пешком - бесплатно, на проходной требуется предъявить документы удостоверяющие личность.
+                </p>
+                <h3>Время выдачи заказов:</h3>
+                <ul class="delivery-times">
+                  <li>в день готовности заказа с 17:00 до 18:00</li>
+                  <li>в последующие дни с 09:00 до 18:00</li>
+                </ul>
+                <p>Подробную информацию о самовывозе, а также схему проезда можно <a title="Доставка" href="http://printomat.ru/content/delivery" target="_blank">посмотреть здесь</a>.</p>
+              </div>
+              
+              <div class="calc-buttons">
+                <a href="/shop/index/page/1" class="button button-3 button-back">назад</a>
+                <button id="wtv_button" class="button button-2 button-forward next back_next_button" onclick="set_wtv(); return false;"><i class="tl"></i><i class="tr"></i><i class="br"></i><i class="bl"></i>продолжить</button>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+        <h2>Регистрация и оплата</h2>
+        
+        <div id="calc" class="flow print-calc print-calc-2 fc">
+          <div id="steps">
+            <div id="post-press-navi">
+              <ul id="order_step" class="navi">
+                <li class="step_done step-1">Продукт</li>
+                <li class="step_done step-2">Послепечатная отделка</li>
+                <li class="step_done step-3">Загрузка файлов</li>
+                <li class="step_done step-4">Доставка</li>
+                <li id="step_end" class="step_current step-5">Оплата</li>
+              </ul>
+            </div>
+            
+            <div id="payment-left">
+              <h2>Ваш заказ</h2>
+              <div id="cart_div">
+                
+                <div class="payment-order-block">
+                  <div class="payment-order-item">
+                    <div class="oi-ttl">
+                      Буклет-лифлет
+                    </div>
+                    <div class="oi-descr">
+                      <p>150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%), 210 x 210 мм., Односторонняя полноцветная печать (4+0), Фальцовка - фальц лифлет (6 страниц), Сверление - 1 отверстие 3.0мм, Перфорация - 1 перфорация.</p>
+                    </div>
+                    <h3>прикрепленные файлы</h3>
+                    <div class="attachments-list fc">
+                      <div class="al-item fc">
+                        <div class="pic">
+                          <a href="#"><img src="files/file-tmb.jpg"/></a>
+                        </div>
+                        <div class="descr">
+                          <div class="file-name">Семья веселых утят на прогулке летним днем.pdf</div>
+                          <div class="file-size">186.4 kB</div>
+                          <div class="file-side">
+                            лицевая сторона
+                          </div>
+                        </div>
+                      </div>
+                      <div class="al-item fc">
+                        <div class="pic">
+                          <a href="#"><img src="files/file-tmb.jpg"/></a>
+                        </div>
+                        <div class="descr">
+                          <div class="file-name">Семья веселых утят на прогулке летним днем.pdf</div>
+                          <div class="file-size">186.4 kB</div>
+                          <div class="file-side">
+                            оборотная сторона
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oi-controls fc">
+                      <div class="oi-edit">
+                        <div class="button button-6 button-expand">Редактировать заказ</div>
+                        <div class="edit-expandable">
+                          <div class="cont">
+                            <ul>
+                              <li><a href="#">Изменить конфигурацию продукта</a></li>
+                              <li><a href="#">Изменить послепечатную отделку</a></li>
+                              <li><a href="#">Изменить файлы</a></li>
+                              <li><a href="#">Изменить информацию о доставке</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="oi-delete"></div>
+                      <div class="oi-price">99 397,91 р.</div>
+                      <div class="oi-count">15 000 шт.</div>
+                    </div>
+                  </div>
+                  <div class="payment-order-item">
+                    <div class="oi-ttl">
+                      пригласительный
+                    </div>
+                    <div class="oi-descr">
+                      <p>150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%), 210 x 210 мм., Односторонняя полноцветная печать (4+0), Фальцовка - фальц лифлет (6 страниц), Сверление - 1 отверстие 3.0мм, Перфорация - 1 перфорация.</p>
+                    </div>
+                    <h3>прикрепленные файлы</h3>
+                    <div class="attachments-list fc">
+                      <div class="al-item fc">
+                        <div class="pic">
+                          <a href="#"><img src="files/file-tmb.jpg"/></a>
+                        </div>
+                        <div class="descr">
+                          <div class="file-name">Семья веселых утят на прогулке летним днем.pdf</div>
+                          <div class="file-size">186.4 kB</div>
+                          <div class="file-side">
+                            лицевая сторона
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oi-controls fc">
+                      <div class="oi-edit">
+                        <div class="button button-6 button-expand">Редактировать заказ</div>
+                        <div class="edit-expandable">
+                          <div class="cont">
+                            <ul>
+                              <li><a href="#">Изменить конфигурацию продукта</a></li>
+                              <li><a href="#">Изменить послепечатную отделку</a></li>
+                              <li><a href="#">Изменить файлы</a></li>
+                              <li><a href="#">Изменить информацию о доставке</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="oi-delete"></div>
+                      <div class="oi-price">99 397,91 р.</div>
+                      <div class="oi-count">15 000 шт.</div>
+                    </div>
+                  </div>
+                
+                  <div class="payment-order-controls fc">
+                    <div class="button button-7 button-add">Добавить еще продукт</div>
+                    <div class="button button-delete">Удалить все продукты</div>
+                  </div>
+                
+                </div>
+                
+                <h2>Доставка</h2>
+                
+                <div class="payment-order-block">
+                  <table class="payment-delivery-info">
+                    <tr>
+                      <td class="name">
+                        cамовывоз 05.02.2014<br />
+                        м. Курская, пн-пт, с 17:00 часов<br />
+                        Буклет/Лифлет ( 400 шт. ),  2.65 кг. 
+                      </td>
+                      <td class="val">
+                        0 р.
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="payment-prices">
+                    <tr>
+                      <th>Сумма заказа:</th>
+                      <th>НДС:</th>
+                      <th>Итого (с НДС):</th>
+                    </tr>
+                    <tr>
+                      <td>2 032,13 р.</td>
+                      <td>365,78 р.</td>
+                      <td><span class="total">2 032,13 р.</span></td>
+                    </tr>
+                  </table>
+                </div>
+                
+                <div class="payment-buttons fc">
+                  <div class="button button-download"><big>Сохранить расчет</big><small>ссылка</small></div>
+                  <div class="button button-download button-pdf"><big>Показать расчет</big><small>pdf файл</small></div>
+                </div>
+                
+                <div class="payment-info">
+                  <p>По Вашему желанию Вы можете сохранить информацию о параметрах заказа в форме расчета в личном кабинете. Для этого воспользуйтесь, пожалуйста, ссылками ниже.</p>
+                  <p>Для неавторизированных пользователей сохранение расчета происходит только в нашей системе. В данном случае для просмотра расчета требуется сохранить предложенную ссылку или pdf файл.</p>
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div id="payment-right">
+              <h2>Регистрация</h2>
+              <form id="form_payment" enctype="application/x-www-form-urlencoded" autocomplete="off" action="/shop/payment" method="post">
+                <dl>
+                  <input type="hidden" name="type" value="order" id="type">
+                </dl>
+                <fieldset id="fieldset-customer" class="customer">
+                  <dl>
+                    <dt id="customer_firstname-label"><label for="customer_firstname" class="required">Ваше имя<span class="req">*</span></label></dt>
+                    <dd id="customer_firstname-element">
+                    <input type="text" name="customer_firstname" id="customer_firstname" value="" size="32" maxlength="100" class="rs__customer_firstname" onblur="__rsSetPlaceholder('fname', this);"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="customer_email-label"><label for="customer_email" class="required">Ваш email<span class="req">*</span></label></dt>
+                    <dd id="customer_email-element">
+                    <input type="text" name="customer_email" id="customer_email" value="" size="32" maxlength="100" class="rs__customer_email" onblur="__rsSetPlaceholder('email', this);">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="customer_acquired-label"><label for="customer_acquired" class="required">Как вы узнали о&nbsp;нас</label></dt>
+                    <dd id="customer_acquired-element">
+                    <select name="customer_acquired" id="customer_acquired">
+                      <option value="" label="-">-</option>
+                      <option value="Выставки" label="Выставки">Выставки</option>
+                      <option value="Наружная реклама" label="Наружная реклама">Наружная реклама</option>
+                      <option value="Реклама в интернете" label="Реклама в интернете">Реклама в интернете</option>
+                      <option value="Социальные сети" label="Социальные сети">Социальные сети</option>
+                      <option value="Купон на печать" label="Купон на печать">Купон на печать</option>
+                      <option value="Рекомендации знакомых" label="Рекомендации знакомых">Рекомендации знакомых</option>
+                      <option value="Визит сотрудника Принтомата (Алексей)" label="Визит сотрудника Принтомата (Алексей)">Визит сотрудника Принтомата (Алексей)</option>
+                    </select>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dd class="noleftmargin" id="customer_newsletter-element">
+                    <p class="description">
+                      Newsletter abonnieren
+                    </p>
+                    <input type="hidden" name="customer_newsletter" value=""><input type="checkbox" name="customer_newsletter" id="customer_newsletter" value="1" class="rs__customer_newsletter styled">
+                    <div id="customer_newsletter-label" class="styled">
+                      <label for="customer_newsletter" class="optional">Подписаться на рассылку</label>
+                    </div>
+                    </dd>
+                  </dl>
+                </fieldset>
+                <fieldset id="fieldset-address" class="address">
+                  <h3>Адрес плательщика</h3>
+                  <dl>
+                    <dt id="select-label"><label for="select" class="optional">Адресная книга</label></dt>
+                    <dd id="select-element">
+                    <select name="select" id="select" onchange="__rsPrefillAddress(this);" onkeyup="this.blur(); this.focus();" class="rs__select">
+                      <option value="0" label="Новый, не сохраненный адрес" selected="selected">Новый, не сохраненный адрес</option>
+                    </select>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="title-label"><label for="title" class="optional">Физ / Юр лицо<span class="req">*</span></label></dt>
+                    <dd id="title-element">
+                    <select name="title" id="title" class="rs__title">
+                      <option value="Herr" label="Господин">Господин</option>
+                      <option value="Frau" label="Госпожа">Госпожа</option>
+                      <option value="Firma" label="Юридическое лицо">Юридическое лицо</option>
+                    </select>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="firstname-label"><label for="firstname" class="optional">Имя<span class="req">*</span></label></dt>
+                    <dd id="firstname-element">
+                    <input type="text" name="firstname" id="firstname" value="" size="32" maxlength="100" class="rs__firstname"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="lastname-label"><label for="lastname" class="optional">Фамилия<span class="req">*</span></label></dt>
+                    <dd id="lastname-element">
+                    <input type="text" name="lastname" id="lastname" value="" size="32" maxlength="100" class="rs__lastname"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="company-label" style="display: none;"><label for="company" class="optional">Название фирмы<span class="req">*</span></label></dt>
+                    <dd id="company-element" style="display: none;">
+                    <input type="text" name="company" id="company" value="" size="32" maxlength="100" class="rs__company">
+                    <img class="button" alt="" src="/load/images/information.png" onclick="toggle_object_inline('payment-info-3')">
+                    <div class="email-info payment-info-3">
+                       Укажите здесь полное наименование Вашей фирмы, например ООО "Печатаем Вместе".<br>
+                      Индивидуальным предпринимателям здесь нужно указать сокращение ИП и далее Вашу фамилию и инициалы.
+                    </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="street-label"><label for="street" class="required">Улица</label></dt>
+                    <dd id="street-element">
+                    <input type="text" name="street" id="street" value="" size="32" maxlength="100" class="rs__street"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="streetnr-label"><label for="streetnr" class="required">Номер дома</label></dt>
+                    <dd id="streetnr-element">
+                    <input type="text" name="streetnr" id="streetnr" value="" size="32" maxlength="100" class="rs__streetnr"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="iso_country-label"><label for="iso_country" class="required">Страна</label></dt>
+                    <dd id="iso_country-element">
+                    <select name="iso_country" id="iso_country" onchange="__rsGetPayment(this);" class="rs__iso_country">
+                      <option value="RU" label="Россия">Россия</option>
+                    </select>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="zipcode-label"><label for="zipcode" class="required">Индекс</label></dt>
+                    <dd id="zipcode-element">
+                    <input type="text" name="zipcode" id="zipcode" value="" size="32" maxlength="100" class="rs__zipcode"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="city-label"><label for="city" class="required">Город</label></dt>
+                    <dd id="city-element">
+                    <input type="text" name="city" id="city" value="" size="32" maxlength="100" class="rs__city"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="area-label"><label for="area" class="optional">Область</label></dt>
+                    <dd id="area-element">
+                    <input type="text" name="area" id="area" value="" size="32" maxlength="100" class="rs__area rs__regiondetail"></dd>
+                  </dl>
+                </fieldset>
+                <fieldset id="fieldset-contact" class="contact">
+                  <h3>Контакты</h3>
+                  <dl>
+                    <dt id="customer_email-label"><label for="customer_email" class="required">Email адрес</label></dt>
+                    <dd id="customer_email-element">
+                    <input type="text" name="customer_email" id="customer_email" value="" size="32" maxlength="100" class="rs__customer_email" onblur="__rsSetPlaceholder('email', this);">
+                    <div class="form-tooltip-trigger"></div>
+                    <div class="tooltip form-tooltip">
+                      <div class="tooltip-cont">
+                        Укажите здесь email адрес для регистрации. Данные для авторизации (<b>пароль</b>) Вы получите на этот адрес электронной почты после первого сделанного Вами заказа. <br>
+                        На данный адрес будет производиться отправка всей электронной почты.
+                      </div>
+                    </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt id="phone2-label"><label for="phone2" class="optional">Телефон</label></dt>
+                    <dd id="phone2-element">
+                    <input type="text" name="phone2" id="phone2" value="" class="rs__phone2" size="32" maxlength="100"></dd>
+                  </dl>
+                  <dl>
+                    <dt id="phone1-label"><label for="phone1" class="required">Моб. телефон<span class="req">*</span></label></dt>
+                    <dd id="phone1-element">
+                    <input type="text" name="phone1" id="phone1" value="" class="rs__phone1" size="32" maxlength="100">
+                    <div class="form-tooltip-trigger"></div>
+                    <div class="tooltip form-tooltip">
+                      <div class="tooltip-cont">
+                        Укажите здесь контактный номер телефона в случае возникновения вопросов по оформленному заказу.
+                      </div>
+                    </div>
+                    </dd>
+                  </dl>
+                </fieldset>
+                <fieldset id="fieldset-payment" class="payment">
+                  <h3>Способ оплаты</h3>
+                  <div class="pay-groups fc">
+                  	<dl class="pay_grp group_1">
+                  	  <dt id="pay_grp_group_1-label"><label class="optional">Для физических лиц</label></dt>
+                  	  <dd id="pay_grp_group_1-element">
+                  	  <label class="styled" for="pay_grp_group_1-44"><input type="radio" name="id" id="pay_grp_group_1-44" value="44" class="styled">
+                  	  <div class="radio_link void">
+                  	    <div class="radio_text">
+                  	      QIWI Кошелек
+                  	    </div>
+                  	  </div>
+                  	  </label><label class="styled" for="pay_grp_group_1-41"><input type="radio" name="id" id="pay_grp_group_1-41" value="41" class="styled">
+                  	  <div class="radio_link void">
+                  	    <div class="radio_text">
+                  	      Электронный платеж
+                  	    </div>
+                  	  </div>
+                  	  </label></dd>
+                  	</dl>
+                  	<dl class="pay_grp group_2">
+                  	  <dt id="pay_grp_group_2-label"><label class="optional">Для юридических лиц</label></dt>
+                  	  <dd id="pay_grp_group_2-element">
+                  	  <label class="styled" for="pay_grp_group_2-29"><input type="radio" name="id" id="pay_grp_group_2-29" value="29" class="styled">
+                  	  <div class="radio_link void">
+                  	    <div class="radio_text">
+                  	      Банковский перевод
+                  	    </div>
+                  	  </div>
+                  	  </label></dd>
+                  	</dl>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <dl>
+                    <dd class="noleftmargin" id="confirm_terms-element">
+                    <input type="hidden" name="confirm_terms" value=""><input type="checkbox" name="confirm_terms" id="confirm_terms" value="1" class="styled">
+                    <div id="confirm_terms-label" class="styled">
+                      <label for="confirm_terms" class="required">Я согласен со всеми положениями <a style="display: inline;" title="Посмотреть соглашения" href="#" onclick="show_docs('oferta'); return false;">соглашения</a></label>
+                    </div>
+                    </dd>
+                  </dl>
+                </fieldset>
+              </form>
+              <div class="payment_buttons round">
+                <input type="submit" value="Я подтверждаю свой заказ" class="button button-2"/>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    
+  </div>
+
+</div>
+
+<div class="footer">
+  
+</div>
+
+</body>
+
+</html>

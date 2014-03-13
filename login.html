@@ -1,0 +1,2509 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ренпринт - Личный кабинет - Вход</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="js/masked.input.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicefileinput.min.js"></script>
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    openPopup("loginPopup");
+  });
+</script>
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="top-wrap">
+
+  <div class="top-main">
+    
+    <div class="header">
+      
+      <div class="main-menu-wrapper">
+        <div class="center-wrapper">
+        	<ul class="main-menu">
+        	  <li><a href="#">Калькулятор</a></li>
+        	  <li><a href="#">Почему мы?</a></li>
+        	  <li><a href="#">Как мы работаем</a></li>
+        	  <li><a href="#">Наши возможности</a></li>
+        	  <li><a href="#">Получи скидку</a></li>
+        	  <li><a href="#">Портфолио</a></li>
+        	  <li><a href="#">Контакты</a></li>
+        	</ul>
+        </div>
+      </div>
+      
+      <div class="header-bottom fc">
+        <div class="center-wrapper">
+        	<div class="header-l">
+        	  <div class="header-schedule">
+        	    Звоните с 10.00 до 20.00 ежедневно
+        	  </div>
+        	  <div class="header-phone">
+        	    +7 (495) 642-15-11
+        	  </div>
+        	  <div class="header-callback">
+        	    <span class="callback-trigger" onclick="openPopup('callbackPopup')">Заказать обратный звонок</span>
+        	  </div>
+        	</div>
+        	<div class="logo">
+        	  <a href="#"><img src="images/logo.png" alt="Renaissanse Art Group"/></a>
+        	</div>
+        	<div class="header-r">
+        	  <div class="user-block">
+        	    Добро пожаловать, <a href="#">Вход</a>
+        	  </div>
+        	  <div class="header-cart">
+        	    <div class="button button-cart">2 продукта <span>14 769,15 р.</span></div>
+        	  </div>
+        	  <div class="button button-4" onclick="openPopup('orderPopup')">Оставить заявку</div>
+        	</div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="body">
+    
+      <div class="main-slider">
+        <div class="main-slider-edge"></div>
+        <div class="center-wrapper">
+          <div class="slide slide-1">
+            <div class="pic">
+              <img src="files/slide-1.jpg"/>
+            </div>
+            <div class="descr">
+              <div class="cont">
+              	<h3>Визитки</h3>
+              	<div class="text">
+              	  <p>Хотите выгодно отличаться от конкурентов? На бумаге TRIPLEX толщиной 1мм.</p>
+              	</div>
+              	<div class="button button-1">Заказать</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="pic">
+              <img src="files/slide-2.jpg"/>
+            </div>
+            <div class="descr">
+              <div class="cont">
+              	<h3>Флаеры и листовки</h3>
+              	<div class="text">
+              	  <p>Хотите выгодно отличаться от конкурентов? На бумаге TRIPLEX толщиной 1мм.</p>
+              	</div>
+              	<div class="button button-1">Заказать</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-3">
+            <div class="pic">
+              <img src="files/slide-1.jpg"/>
+            </div>
+            <div class="descr">
+              <div class="cont">
+              	<h3>Буклеты</h3>
+              	<div class="text">
+              	  <p>Хотите выгодно отличаться от конкурентов? На бумаге TRIPLEX толщиной 1мм.</p>
+              	</div>
+              	<div class="button button-1">Заказать</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-4">
+            <div class="pic">
+              <img src="files/slide-2.jpg"/>
+            </div>
+            <div class="descr">
+              <div class="cont">
+              	<h3>Брошюры и каталоги</h3>
+              	<div class="text">
+              	  <p>Хотите выгодно отличаться от конкурентов? На бумаге TRIPLEX толщиной 1мм.</p>
+              	</div>
+              	<div class="button button-1">Заказать</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-5">
+            <div class="pic">
+              <img src="files/slide-1.jpg"/>
+            </div>
+            <div class="descr">
+              <div class="cont">
+              	<h3>Приглашения и открытки</h3>
+              	<div class="text">
+              	  <p>Хотите выгодно отличаться от конкурентов? На бумаге TRIPLEX толщиной 1мм.</p>
+              	</div>
+              	<div class="button button-1">Заказать</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-6">
+            <div class="pic">
+              <img src="files/slide-2.jpg"/>
+            </div>
+            <div class="descr">
+              <div class="cont">
+              	<h3>Блокноты и кубарики</h3>
+              	<div class="text">
+              	  <p>Хотите выгодно отличаться от конкурентов? На бумаге TRIPLEX толщиной 1мм.</p>
+              	</div>
+              	<div class="button button-1">Заказать</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-7">
+            <div class="pic">
+              <img src="files/slide-1.jpg"/>
+            </div>
+            <div class="descr">
+              <div class="cont">
+              	<h3>Пакеты</h3>
+              	<div class="text">
+              	  <p>Хотите выгодно отличаться от конкурентов? На бумаге TRIPLEX толщиной 1мм.</p>
+              	</div>
+              	<div class="button button-1">Заказать</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-services">
+        <div class="center-wrapper">
+        
+          <h2 class="main-block-ttl">закажите печать прямо сейчас</h2>
+        
+        	<div class="services-row fc">
+        	  <div class="service-link" rel="calc-1"><div class="ico ico-1"></div><div class="ttl"><div class="ttl-cont">Визитки</div></div></div>
+        	  <div class="service-link" rel="calc-2"><div class="ico ico-2"></div><div class="ttl"><div class="ttl-cont">Флаеры и&nbsp;листовки</div></div></div>
+        	  <div class="service-link" rel="calc-3"><div class="ico ico-3"></div><div class="ttl"><div class="ttl-cont">Буклеты</div></div></div>
+        	  <div class="service-link" rel="calc-4"><div class="ico ico-4"></div><div class="ttl"><div class="ttl-cont">Брошюры и&nbsp;каталоги</div></div></div>
+        	  <div class="service-link" rel="calc-5"><div class="ico ico-5"></div><div class="ttl"><div class="ttl-cont">Приглашения и&nbsp;открытки</div></div></div>
+        	  <div class="service-link" rel="calc-6"><div class="ico ico-6"></div><div class="ttl"><div class="ttl-cont">Блокноты и&nbsp;кубарики</div></div></div>
+        	</div>
+          <div class="services-calcs">
+            <div class="calc-wrapper">
+              <div class="calc-cont fc">
+                <div class="close"></div>
+                <div id="calc-1" class="print-calc-block">
+                  <div class="print-calc">
+                    <div id="steps" class="fc">
+                      <form id="product-form" action="/shop" method="POST">
+                        <div id="step-0" class="step step-0">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Ваш онлайн-заказ</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-0" class="options options-12">
+                            <table id="s-product">
+                            <tbody>
+                            <tr id="product_832">
+                              <td onclick="set_product_id(832); return false;">
+                                <span>Брошюра на скрепке</span>
+                              </td>
+                            </tr>
+                            <tr id="product_714">
+                              <td onclick="set_product_id(714); return false;">
+                                <span>Календарь перекидной</span>
+                              </td>
+                            </tr>
+                            <tr id="product_549">
+                              <td onclick="set_product_id(549); return false;">
+                                <span>Флаер/Листовка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_546">
+                              <td onclick="set_product_id(546); return false;">
+                                <span>Открытка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_544">
+                              <td onclick="set_product_id(544); return false;">
+                                <span>Визитные карточки</span>
+                              </td>
+                            </tr>
+                            <tr class="active" id="product_548">
+                              <td onclick="set_product_id(548); return false;">
+                                <span>Пригласительный</span>
+                              </td>
+                            </tr>
+                            <tr id="product_543">
+                              <td onclick="set_product_id(543); return false;">
+                                <span>Буклет/Лифлет</span>
+                              </td>
+                            </tr>
+                            <tr id="product_547">
+                              <td onclick="set_product_id(547); return false;">
+                                <span>Постер</span>
+                              </td>
+                            </tr>
+                            <tr id="product_542">
+                              <td onclick="set_product_id(542); return false;">
+                                <span>Бланк</span>
+                              </td>
+                            </tr>
+                            <tr id="product_437">
+                              <td onclick="set_product_id(437); return false;">
+                                <span>Папка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_545">
+                              <td onclick="set_product_id(545); return false;">
+                                <span>Наклейка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_661">
+                              <td onclick="set_product_id(661); return false;">
+                                <span>Электростатическая наклейка</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-1" class="step step-1">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Бумага</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-1" class="options options-2">
+                            <table id="s-paper">
+                            <tbody>
+                            <tr id="paper_553" class="active">
+                              <td onclick="set_paper_id(553); return false;">
+                                <img width="1" src="images/empty.png"><span>250г матовая мелованная</span>
+                              </td>
+                            </tr>
+                            <tr id="paper_555">
+                              <td onclick="set_paper_id(555); return false;">
+                                <img width="1" src="images/empty.png"><span>350г матовая мелованная</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-2" class="step step-2">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Размер</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-2" class="options options-12">
+                            <table id="s-size">
+                            <tbody>
+                            <tr id="own_format">
+                              <td data="own_format" onclick="show_search_form_format(); return false;">
+                                <img width="1" src="images/empty.png"><span>Свой размер</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1199">
+                              <td data="148x105" onclick="set_format_id(1199); return false;">
+                                <img width="1" src="images/empty.png"><span>A6 (148x105)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1155">
+                              <td data="210x105" onclick="set_format_id(1155); return false;">
+                                <img width="1" src="images/empty.png"><span>210x105</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1198">
+                              <td data="210x148" onclick="set_format_id(1198); return false;">
+                                <img width="1" src="images/empty.png"><span>A5 (210x148)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1164">
+                              <td data="297x105" onclick="set_format_id(1164); return false;">
+                                <img width="1" src="images/empty.png"><span>297x105</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1156" class="active">
+                              <td data="210x210" onclick="set_format_id(1156); return false;">
+                                <img width="1" src="images/empty.png"><span>210x210</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1172">
+                              <td data="420x105" onclick="set_format_id(1172); return false;">
+                                <img width="1" src="images/empty.png"><span>420x105</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1197">
+                              <td data="297x210" onclick="set_format_id(1197); return false;">
+                                <img width="1" src="images/empty.png"><span>A4 (297x210)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1173">
+                              <td data="420x148" onclick="set_format_id(1173); return false;">
+                                <img width="1" src="images/empty.png"><span>420x148</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1174">
+                              <td data="420x210" onclick="set_format_id(1174); return false;">
+                                <img width="1" src="images/empty.png"><span>420x210</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1196">
+                              <td data="420x297" onclick="set_format_id(1196); return false;">
+                                <img width="1" src="images/empty.png"><span>A3 (420x297)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1202">
+                              <td data="630x297" onclick="set_format_id(1202); return false;">
+                                <img width="1" src="images/empty.png"><span>Евробуклет (630x297)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-3" class="step step-3">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Краски</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-3" class="options options-2">
+                            <table id="s-color">
+                            <tbody>
+                            <tr id="color_309">
+                              <td onclick="set_color_id(309); return false;">
+                                <img width="1" src="images/empty.png"><span>Односторонняя полноцветная печать (4+0)</span>
+                              </td>
+                            </tr>
+                            <tr id="color_310" class="active">
+                              <td onclick="set_color_id(310); return false;">
+                                <img width="1" src="images/empty.png"><span>Двухсторонняя полноцветная печать (4+4)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-5" class="step step-1" style="">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Фальцовка</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-5" class="options options-2">
+                            <table id="s-fold">
+                            <tbody>
+                            <tr class="active" id="fold_pso_lang_1">
+                              <td onclick="set_fold_load('pso_lang_1','Фальц по короткой стороне'); return false;" onmouseover="show_fold_load('pso_lang_1','Фальц по короткой стороне'); return false;">
+                                <img width="1" src="images/empty.png"><span>Фальц по короткой стороне</span>
+                              </td>
+                            </tr>
+                            <tr id="fold_pso_kurz_1">
+                              <td onclick="set_fold_load('pso_kurz_1','Фальц по длинной стороне'); return false;" onmouseover="show_fold_load('pso_kurz_1','Фальц по длинной стороне'); return false;">
+                                <img width="1" src="images/empty.png"><span>Фальц по длинной стороне</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                          <div id="show_fold" class="description">
+                            <img id="prod_img" onclick="show_fold_image('pso_lang_1', 'Фальц по короткой стороне'); return false;" class="product_image" src="load/images/fold_images/pso_lang_1.png" alt="">
+                          </div>
+                        </div>
+                        <div id="step-4" class="step step-4 options-scroll">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Тираж и стоимость</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-4" class="options options-17">
+                            <table id="s-quantity">
+                            <tbody>
+                            <tr id="charge_1082">
+                              <td onclick="set_charge_id(1082,10); return false;">
+                                <img width="1" src="images/empty.png"><span>10</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;226,33 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1085">
+                              <td onclick="set_charge_id(1085,25); return false;">
+                                <img width="1" src="images/empty.png"><span>25</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;358,50 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_646">
+                              <td onclick="set_charge_id(646,50); return false;">
+                                <img width="1" src="images/empty.png"><span>50</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;578,79 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1090">
+                              <td onclick="set_charge_id(1090,75); return false;">
+                                <img width="1" src="images/empty.png"><span>75</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;799,06 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_899">
+                              <td onclick="set_charge_id(899,100); return false;">
+                                <img width="1" src="images/empty.png"><span>100</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>2&nbsp;019,35 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1083">
+                              <td onclick="set_charge_id(1083,150); return false;">
+                                <img width="1" src="images/empty.png"><span>150</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>2&nbsp;459,91 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1084">
+                              <td onclick="set_charge_id(1084,200); return false;">
+                                <img width="1" src="images/empty.png"><span>200</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>2&nbsp;900,48 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_906">
+                              <td onclick="set_charge_id(906,250); return false;">
+                                <img width="1" src="images/empty.png"><span>250</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>3&nbsp;412,35 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1086">
+                              <td onclick="set_charge_id(1086,300); return false;">
+                                <img width="1" src="images/empty.png"><span>300</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>3&nbsp;542,95 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1087">
+                              <td onclick="set_charge_id(1087,400); return false;">
+                                <img width="1" src="images/empty.png"><span>400</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>3&nbsp;804,14 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_647">
+                              <td onclick="set_charge_id(647,500); return false;">
+                                <img width="1" src="images/empty.png"><span>500</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>4&nbsp;065,35 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_900">
+                              <td onclick="set_charge_id(900,1000); return false;">
+                                <img width="1" src="images/empty.png"><span>1000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>5&nbsp;371,37 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_907">
+                              <td onclick="set_charge_id(907,2500); return false;">
+                                <img width="1" src="images/empty.png"><span>2500</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>9&nbsp;289,49 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_648">
+                              <td onclick="set_charge_id(648,5000); return false;">
+                                <img width="1" src="images/empty.png"><span>5000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>15&nbsp;819,66 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_901">
+                              <td onclick="set_charge_id(901,10000); return false;">
+                                <img width="1" src="images/empty.png"><span>10000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>28&nbsp;317,75 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_903">
+                              <td onclick="set_charge_id(903,15000); return false;">
+                                <img width="1" src="images/empty.png"><span>15000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>40&nbsp;815,87 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_905">
+                              <td onclick="set_charge_id(905,20000); return false;">
+                                <img width="1" src="images/empty.png"><span>20000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>53&nbsp;314,02 р.</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                          <div id="price_infos" class="description red_color">
+                            Внимание. Цены отсутствуют.
+                          </div>
+                          <div id="charge_infos" class="description red_color" style="display: block;">
+                            Нажмите на выбранный тираж<br>
+                            для оформления заказа.
+                          </div>
+                          <!--<div id="own_charge" class="description"><a href="#" onclick="show_search_form_charge(); return false;">Указать свой тираж</a></div>-->
+                        </div>
+                        <input name="delay_id" id="delay_id" type="hidden" value="">
+                        <input name="checkout" type="hidden" value="1">
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <div class="print-dates">
+                    <h2>Сроки печати</h2>
+                    <div class="date-select">
+                      <div class="date-buttons">
+                        <div class="button button-print-date button-print-date-active">
+                          <span class="b-date">Пн, 27 янв.</span>
+                          <span class="b-price">2 268,70 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Ср, 29 янв.</span>
+                          <span class="b-price">1 864,09 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Пт, 31 янв.</span>
+                          <span class="b-price">1 770,90 р.</span>
+                        </div>
+                      </div>
+                      <div class="print-date-text">
+                        <p>Вы можете выбрать между стандарным, экспресс или экономичным сроком готовности.</p>
+                        <p>Пожалуйста, учитывайте, что при выборе дополнительной послепечатной отделки сроки готовности меняются.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-footer fc">
+                    <div class="button button-2 button-forward">Продолжить</div>
+                    <div class="button button-3 button-back">Назад</div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              
+              
+            </div>
+            
+            <div class="calc-wrapper">
+              <div class="calc-cont fc">
+                <div class="close"></div>
+                <div id="calc-2" class="print-calc-block">
+                  <div class="print-calc">
+                    <div id="steps" class="fc">
+                      <form id="product-form" action="/shop" method="POST">
+                        <div id="step-0" class="step step-0">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Ваш онлайн-заказ</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-0" class="options options-12">
+                            <table id="s-product">
+                            <tbody>
+                            <tr id="product_832">
+                              <td onclick="set_product_id(832); return false;">
+                                <span>Брошюра на скрепке</span>
+                              </td>
+                            </tr>
+                            <tr class="active" id="product_714">
+                              <td onclick="set_product_id(714); return false;">
+                                <span>Календарь перекидной</span>
+                              </td>
+                            </tr>
+                            <tr id="product_549">
+                              <td onclick="set_product_id(549); return false;">
+                                <span>Флаер/Листовка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_546">
+                              <td onclick="set_product_id(546); return false;">
+                                <span>Открытка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_544">
+                              <td onclick="set_product_id(544); return false;">
+                                <span>Визитные карточки</span>
+                              </td>
+                            </tr>
+                            <tr id="product_548">
+                              <td onclick="set_product_id(548); return false;">
+                                <span>Пригласительный</span>
+                              </td>
+                            </tr>
+                            <tr id="product_543">
+                              <td onclick="set_product_id(543); return false;">
+                                <span>Буклет/Лифлет</span>
+                              </td>
+                            </tr>
+                            <tr id="product_547">
+                              <td onclick="set_product_id(547); return false;">
+                                <span>Постер</span>
+                              </td>
+                            </tr>
+                            <tr id="product_542">
+                              <td onclick="set_product_id(542); return false;">
+                                <span>Бланк</span>
+                              </td>
+                            </tr>
+                            <tr id="product_437">
+                              <td onclick="set_product_id(437); return false;">
+                                <span>Папка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_545">
+                              <td onclick="set_product_id(545); return false;">
+                                <span>Наклейка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_661">
+                              <td onclick="set_product_id(661); return false;">
+                                <span>Электростатическая наклейка</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-1" class="step step-1">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Бумага</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-1" class="options options-1">
+                            <table id="s-paper">
+                            <tbody>
+                            <tr class="active" id="paper_785">
+                              <td onclick="set_paper_id(785); return false;">
+                                <img width="1" src="images/empty.png"><span>Обложка 350 г/м матовая мелованная, блок 250 г/м </span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-2" class="step step-2">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Размер</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-2" class="options options-3">
+                            <table id="s-size">
+                            <tbody>
+                            <tr id="own_format">
+                              <td data="own_format" onclick="show_search_form_format(); return false;">
+                                <img width="1" src="images/empty.png"><span>Свой размер</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1805" class="active">
+                              <td data="297x210" onclick="set_format_id(1805); return false;">
+                                <img width="1" src="images/empty.png"><span>A4 вертикальный или горизонтальный (297x210)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1804">
+                              <td data="297x420" onclick="set_format_id(1804); return false;">
+                                <img width="1" src="images/empty.png"><span>А3 вертикальный или горизонтальный (297х420)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-3" class="step step-3">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Краски</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-3" class="options options-1">
+                            <table id="s-color">
+                            <tbody>
+                            <tr class="active" id="color_309">
+                              <td onclick="set_color_id(309); return false;">
+                                <img width="1" src="images/empty.png"><span>Односторонняя полноцветная печать (4+0)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-5" class="step step-1" style="display: none;">
+                        </div>
+                        <div id="step-4" class="step step-4">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Тираж</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-4" class="options options-7">
+                            <table id="s-quantity">
+                            <tbody>
+                            <tr id="charge_1082">
+                              <td onclick="set_charge_id(1082,10); return false;">
+                                <img width="1" src="images/empty.png"><span>10</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>4&nbsp;285,10 р.</span>
+                              </td>
+                            </tr>
+                            <tr class="active" id="charge_1085">
+                              <td onclick="set_charge_id(1085,25); return false;">
+                                <img width="1" src="images/empty.png"><span>25</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>7&nbsp;007,75 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_646">
+                              <td onclick="set_charge_id(646,50); return false;">
+                                <img width="1" src="images/empty.png"><span>50</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>11&nbsp;545,50 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1090">
+                              <td onclick="set_charge_id(1090,75); return false;">
+                                <img width="1" src="images/empty.png"><span>75</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>16&nbsp;083,25 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_899">
+                              <td onclick="set_charge_id(899,100); return false;">
+                                <img width="1" src="images/empty.png"><span>100</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>20&nbsp;621,00 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1083">
+                              <td onclick="set_charge_id(1083,150); return false;">
+                                <img width="1" src="images/empty.png"><span>150</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>29&nbsp;696,49 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1084">
+                              <td onclick="set_charge_id(1084,200); return false;">
+                                <img width="1" src="images/empty.png"><span>200</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>38&nbsp;771,99 р.</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                          <div id="price_infos" class="description red_color">
+                            Внимание. Цены отсутствуют.
+                          </div>
+                          <div id="charge_infos" class="description red_color" style="display: block;">
+                            Нажмите на выбранный тираж<br>
+                            для оформления заказа.
+                          </div>
+                          <!--<div id="own_charge" class="description"><a href="#" onclick="show_search_form_charge(); return false;">Указать свой тираж</a></div>-->
+                        </div>
+                        <input name="delay_id" id="delay_id" type="hidden" value="">
+                        <input name="checkout" type="hidden" value="1">
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <div class="print-dates">
+                    <h2>Сроки печати</h2>
+                    <div class="date-select">
+                      <div class="date-buttons">
+                        <div class="button button-print-date button-print-date-active">
+                          <span class="b-date">Пн, 27 янв.</span>
+                          <span class="b-price">2 268,70 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Ср, 29 янв.</span>
+                          <span class="b-price">1 864,09 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Пт, 31 янв.</span>
+                          <span class="b-price">1 770,90 р.</span>
+                        </div>
+                      </div>
+                      <div class="print-date-text">
+                        <p>Вы можете выбрать между стандарным, экспресс или экономичным сроком готовности.</p>
+                        <p>Пожалуйста, учитывайте, что при выборе дополнительной послепечатной отделки сроки готовности меняются.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-footer fc">
+                    <div class="button button-2 button-forward">Продолжить</div>
+                    <div class="button button-3 button-back">Назад</div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              
+              
+            </div>
+            
+            <div class="calc-wrapper">
+              <div class="calc-cont fc">
+                <div class="close"></div>
+                <div id="calc-3" class="print-calc-block">
+                  <div class="print-calc">
+                    <div id="steps" class="fc">
+                      <form id="product-form" action="/shop" method="POST">
+
+                        <div id="step-0" class="step step-0">
+                            <div class="dummy" style="display: none;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Ваш онлайн-заказ</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-0" class="options options-12"><table id="s-product"><tbody><tr id="product_832"><td onclick="set_product_id(832); return false;"><span>Брошюра на скрепке</span></td></tr><tr class="" id="product_714"><td onclick="set_product_id(714); return false;"><span>Календарь перекидной</span></td></tr><tr id="product_549"><td onclick="set_product_id(549); return false;"><span>Флаер/Листовка</span></td></tr><tr id="product_546"><td onclick="set_product_id(546); return false;"><span>Открытка</span></td></tr><tr id="product_544"><td onclick="set_product_id(544); return false;"><span>Визитные карточки</span></td></tr><tr id="product_548"><td onclick="set_product_id(548); return false;"><span>Пригласительный</span></td></tr><tr id="product_543" class="active"><td onclick="set_product_id(543); return false;"><span>Буклет/Лифлет</span></td></tr><tr id="product_547"><td onclick="set_product_id(547); return false;"><span>Постер</span></td></tr><tr id="product_542"><td onclick="set_product_id(542); return false;"><span>Бланк</span></td></tr><tr id="product_437"><td onclick="set_product_id(437); return false;"><span>Папка</span></td></tr><tr id="product_545"><td onclick="set_product_id(545); return false;"><span>Наклейка</span></td></tr><tr id="product_661"><td onclick="set_product_id(661); return false;"><span>Электростатическая наклейка</span></td></tr></tbody></table></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-1" class="step step-1">
+                            <div class="dummy" style="display: none;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Бумага</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-1" class="options options-6"><table id="s-paper"><tbody><tr id="paper_549"><td onclick="set_paper_id(549); return false;"><img width="1" src="images/empty.png"><span>115г глянцевая мелованная</span></td></tr><tr id="paper_550"><td onclick="set_paper_id(550); return false;"><img width="1" src="images/empty.png"><span>150г  матовая мелованная</span></td></tr><tr id="paper_552" class="active"><td onclick="set_paper_id(552); return false;"><img width="1" src="images/empty.png"><span>150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%)</span></td></tr><tr id="paper_551"><td onclick="set_paper_id(551); return false;"><img width="1" src="images/empty.png"><span>150г глянцевая мелованная</span></td></tr><tr id="paper_553"><td onclick="set_paper_id(553); return false;"><img width="1" src="images/empty.png"><span>250г матовая мелованная</span></td></tr><tr id="paper_555"><td onclick="set_paper_id(555); return false;"><img width="1" src="images/empty.png"><span>350г  матовая мелованная</span></td></tr></tbody></table></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-2" class="step step-2">
+                            <div class="dummy" style="display: none;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Размер</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-2" class="options options-12"><table id="s-size"><tbody><tr id="own_format"><td data="own_format" onclick="show_search_form_format(); return false;"><img width="1" src="images/empty.png"><span>Свой размер</span></td></tr><tr id="format_1199"><td data="148x105" onclick="set_format_id(1199); return false;"><img width="1" src="images/empty.png"><span>A6 (148x105)</span></td></tr><tr id="format_1155"><td data="210x105" onclick="set_format_id(1155); return false;"><img width="1" src="images/empty.png"><span>210x105</span></td></tr><tr id="format_1164"><td data="297x105" onclick="set_format_id(1164); return false;"><img width="1" src="images/empty.png"><span>297x105</span></td></tr><tr id="format_1198"><td data="210x148" onclick="set_format_id(1198); return false;"><img width="1" src="images/empty.png"><span>A5 (210x148)</span></td></tr><tr id="format_1156"><td data="210x210" onclick="set_format_id(1156); return false;"><img width="1" src="images/empty.png"><span>210x210</span></td></tr><tr id="format_1172"><td data="420x105" onclick="set_format_id(1172); return false;"><img width="1" src="images/empty.png"><span>420x105</span></td></tr><tr id="format_1197"><td data="297x210" onclick="set_format_id(1197); return false;"><img width="1" src="images/empty.png"><span>A4 (297x210)</span></td></tr><tr id="format_1174"><td data="420x210" onclick="set_format_id(1174); return false;"><img width="1" src="images/empty.png"><span>420x210</span></td></tr><tr id="format_1196"><td data="420x297" onclick="set_format_id(1196); return false;"><img width="1" src="images/empty.png"><span>A3 (420x297)</span></td></tr><tr id="format_1202"><td data="630x297" onclick="set_format_id(1202); return false;"><img width="1" src="images/empty.png"><span>Евробуклет (630x297)</span></td></tr><tr id="format_1195"><td data="594x420" onclick="set_format_id(1195); return false;"><img width="1" src="images/empty.png"><span>A2 (594x420)</span></td></tr></tbody></table></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-3" class="step step-3">
+                            <div class="dummy" style="display: block;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Краски</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-3" class="options options-1"><img src="images/dummy_images/color_dummy.png" alt=""></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-5" class="step step-1" style="">
+
+                        <div class="dummy" style="display: block;"></div>
+                        <div class="wait" style="display: none;"></div>
+                        <h2>Фальцовка</h2>
+                        <a class="scroll up disabled">&nbsp;</a>
+                        <div id="table-5" class="options"><img src="images/dummy_images/fold_dummy.png" alt=""></div>
+                        <a class="scroll down">&nbsp;</a>
+                        <div id="show_fold" class="description"></div>
+
+                        </div>
+
+                        <div id="step-4" class="step step-4">
+                            <div class="dummy" style="display: block;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Тираж</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-4" class="options options-7"><img src="images/dummy_images/charge_dummy.png" alt=""></div>
+                            <a class="scroll down">&nbsp;</a>
+                          <div id="price_infos" class="description red_color">Внимание. Цены отсутствуют.</div>
+                          <div id="charge_infos" class="description red_color" style="display: none;">Нажмите на выбранный тираж<br>для оформления заказа.</div>
+                            <!--<div id="own_charge" class="description"><a href="#" onclick="show_search_form_charge(); return false;">Указать свой тираж</a></div>-->
+                        </div>
+
+                        <input name="delay_id" id="delay_id" type="hidden" value="">
+                        <input name="checkout" type="hidden" value="1">
+
+                        </form>
+                    </div>
+                  </div>
+                  
+                  <div class="print-dates">
+                    <h2>Сроки печати</h2>
+                    <div class="date-select">
+                      <div class="date-buttons">
+                        <div class="button button-print-date button-print-date-active">
+                          <span class="b-date">Пн, 27 янв.</span>
+                          <span class="b-price">2 268,70 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Ср, 29 янв.</span>
+                          <span class="b-price">1 864,09 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Пт, 31 янв.</span>
+                          <span class="b-price">1 770,90 р.</span>
+                        </div>
+                      </div>
+                      <div class="print-date-text">
+                        <p>Вы можете выбрать между стандарным, экспресс или экономичным сроком готовности.</p>
+                        <p>Пожалуйста, учитывайте, что при выборе дополнительной послепечатной отделки сроки готовности меняются.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-footer fc">
+                    <div class="button button-2 button-forward">Продолжить</div>
+                    <div class="button button-3 button-back">Назад</div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              
+              
+            </div>
+            
+            
+            
+          </div>
+        	<div class="services-row fc">
+        	  <div class="service-link" rel="calc-7"><div class="ico ico-7"></div><div class="ttl"><div class="ttl-cont">Пакеты</div></div></div>
+        	  <div class="service-link" rel="calc-8"><div class="ico ico-8"></div><div class="ttl"><div class="ttl-cont">Календари</div></div></div>
+        	  <div class="service-link" rel="calc-9"><div class="ico ico-9"></div><div class="ttl"><div class="ttl-cont">Брошюры и&nbsp;каталоги</div></div></div>
+        	  <div class="service-link" rel="calc-10"><div class="ico ico-10"></div><div class="ttl"><div class="ttl-cont">Приглашения и&nbsp;открытки</div></div></div>
+        	  <div class="service-link" rel="calc-11"><div class="ico ico-11"></div><div class="ttl"><div class="ttl-cont">Блокноты и&nbsp;кубарики</div></div></div>
+        	  <div class="service-link" rel="calc-12"><div class="ico ico-12"></div><div class="ttl"><div class="ttl-cont"></div></div></div>
+        	</div>
+          <div class="services-calcs">
+            <div class="calc-wrapper">
+              <div class="calc-cont fc">
+                <div class="close"></div>
+                <div id="calc-7" class="print-calc-block">
+                  <div class="print-calc">
+                    <div id="steps" class="fc">
+                      <form id="product-form" action="/shop" method="POST">
+                        <div id="step-0" class="step step-0">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Ваш онлайн-заказ</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-0" class="options options-12">
+                            <table id="s-product">
+                            <tbody>
+                            <tr id="product_832">
+                              <td onclick="set_product_id(832); return false;">
+                                <span>Брошюра на скрепке</span>
+                              </td>
+                            </tr>
+                            <tr id="product_714">
+                              <td onclick="set_product_id(714); return false;">
+                                <span>Календарь перекидной</span>
+                              </td>
+                            </tr>
+                            <tr id="product_549">
+                              <td onclick="set_product_id(549); return false;">
+                                <span>Флаер/Листовка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_546">
+                              <td onclick="set_product_id(546); return false;">
+                                <span>Открытка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_544">
+                              <td onclick="set_product_id(544); return false;">
+                                <span>Визитные карточки</span>
+                              </td>
+                            </tr>
+                            <tr class="active" id="product_548">
+                              <td onclick="set_product_id(548); return false;">
+                                <span>Пригласительный</span>
+                              </td>
+                            </tr>
+                            <tr id="product_543">
+                              <td onclick="set_product_id(543); return false;">
+                                <span>Буклет/Лифлет</span>
+                              </td>
+                            </tr>
+                            <tr id="product_547">
+                              <td onclick="set_product_id(547); return false;">
+                                <span>Постер</span>
+                              </td>
+                            </tr>
+                            <tr id="product_542">
+                              <td onclick="set_product_id(542); return false;">
+                                <span>Бланк</span>
+                              </td>
+                            </tr>
+                            <tr id="product_437">
+                              <td onclick="set_product_id(437); return false;">
+                                <span>Папка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_545">
+                              <td onclick="set_product_id(545); return false;">
+                                <span>Наклейка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_661">
+                              <td onclick="set_product_id(661); return false;">
+                                <span>Электростатическая наклейка</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-1" class="step step-1">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Бумага</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-1" class="options options-2">
+                            <table id="s-paper">
+                            <tbody>
+                            <tr id="paper_553" class="active">
+                              <td onclick="set_paper_id(553); return false;">
+                                <img width="1" src="images/empty.png"><span>250г матовая мелованная</span>
+                              </td>
+                            </tr>
+                            <tr id="paper_555">
+                              <td onclick="set_paper_id(555); return false;">
+                                <img width="1" src="images/empty.png"><span>350г матовая мелованная</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-2" class="step step-2">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Размер</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-2" class="options options-12">
+                            <table id="s-size">
+                            <tbody>
+                            <tr id="own_format">
+                              <td data="own_format" onclick="show_search_form_format(); return false;">
+                                <img width="1" src="images/empty.png"><span>Свой размер</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1199">
+                              <td data="148x105" onclick="set_format_id(1199); return false;">
+                                <img width="1" src="images/empty.png"><span>A6 (148x105)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1155">
+                              <td data="210x105" onclick="set_format_id(1155); return false;">
+                                <img width="1" src="images/empty.png"><span>210x105</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1198">
+                              <td data="210x148" onclick="set_format_id(1198); return false;">
+                                <img width="1" src="images/empty.png"><span>A5 (210x148)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1164">
+                              <td data="297x105" onclick="set_format_id(1164); return false;">
+                                <img width="1" src="images/empty.png"><span>297x105</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1156" class="active">
+                              <td data="210x210" onclick="set_format_id(1156); return false;">
+                                <img width="1" src="images/empty.png"><span>210x210</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1172">
+                              <td data="420x105" onclick="set_format_id(1172); return false;">
+                                <img width="1" src="images/empty.png"><span>420x105</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1197">
+                              <td data="297x210" onclick="set_format_id(1197); return false;">
+                                <img width="1" src="images/empty.png"><span>A4 (297x210)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1173">
+                              <td data="420x148" onclick="set_format_id(1173); return false;">
+                                <img width="1" src="images/empty.png"><span>420x148</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1174">
+                              <td data="420x210" onclick="set_format_id(1174); return false;">
+                                <img width="1" src="images/empty.png"><span>420x210</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1196">
+                              <td data="420x297" onclick="set_format_id(1196); return false;">
+                                <img width="1" src="images/empty.png"><span>A3 (420x297)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1202">
+                              <td data="630x297" onclick="set_format_id(1202); return false;">
+                                <img width="1" src="images/empty.png"><span>Евробуклет (630x297)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-3" class="step step-3">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Краски</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-3" class="options options-2">
+                            <table id="s-color">
+                            <tbody>
+                            <tr id="color_309">
+                              <td onclick="set_color_id(309); return false;">
+                                <img width="1" src="images/empty.png"><span>Односторонняя полноцветная печать (4+0)</span>
+                              </td>
+                            </tr>
+                            <tr id="color_310" class="active">
+                              <td onclick="set_color_id(310); return false;">
+                                <img width="1" src="images/empty.png"><span>Двухсторонняя полноцветная печать (4+4)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-5" class="step step-1" style="">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Фальцовка</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-5" class="options options-2">
+                            <table id="s-fold">
+                            <tbody>
+                            <tr class="active" id="fold_pso_lang_1">
+                              <td onclick="set_fold_load('pso_lang_1','Фальц по короткой стороне'); return false;" onmouseover="show_fold_load('pso_lang_1','Фальц по короткой стороне'); return false;">
+                                <img width="1" src="images/empty.png"><span>Фальц по короткой стороне</span>
+                              </td>
+                            </tr>
+                            <tr id="fold_pso_kurz_1">
+                              <td onclick="set_fold_load('pso_kurz_1','Фальц по длинной стороне'); return false;" onmouseover="show_fold_load('pso_kurz_1','Фальц по длинной стороне'); return false;">
+                                <img width="1" src="images/empty.png"><span>Фальц по длинной стороне</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                          <div id="show_fold" class="description">
+                            <img id="prod_img" onclick="show_fold_image('pso_lang_1', 'Фальц по короткой стороне'); return false;" class="product_image" src="load/images/fold_images/pso_lang_1.png" alt="">
+                          </div>
+                        </div>
+                        <div id="step-4" class="step step-4 options-scroll">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Тираж и стоимость</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-4" class="options options-17">
+                            <table id="s-quantity">
+                            <tbody>
+                            <tr id="charge_1082">
+                              <td onclick="set_charge_id(1082,10); return false;">
+                                <img width="1" src="images/empty.png"><span>10</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;226,33 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1085">
+                              <td onclick="set_charge_id(1085,25); return false;">
+                                <img width="1" src="images/empty.png"><span>25</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;358,50 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_646">
+                              <td onclick="set_charge_id(646,50); return false;">
+                                <img width="1" src="images/empty.png"><span>50</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;578,79 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1090">
+                              <td onclick="set_charge_id(1090,75); return false;">
+                                <img width="1" src="images/empty.png"><span>75</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>1&nbsp;799,06 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_899">
+                              <td onclick="set_charge_id(899,100); return false;">
+                                <img width="1" src="images/empty.png"><span>100</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>2&nbsp;019,35 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1083">
+                              <td onclick="set_charge_id(1083,150); return false;">
+                                <img width="1" src="images/empty.png"><span>150</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>2&nbsp;459,91 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1084">
+                              <td onclick="set_charge_id(1084,200); return false;">
+                                <img width="1" src="images/empty.png"><span>200</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>2&nbsp;900,48 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_906">
+                              <td onclick="set_charge_id(906,250); return false;">
+                                <img width="1" src="images/empty.png"><span>250</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>3&nbsp;412,35 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1086">
+                              <td onclick="set_charge_id(1086,300); return false;">
+                                <img width="1" src="images/empty.png"><span>300</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>3&nbsp;542,95 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1087">
+                              <td onclick="set_charge_id(1087,400); return false;">
+                                <img width="1" src="images/empty.png"><span>400</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>3&nbsp;804,14 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_647">
+                              <td onclick="set_charge_id(647,500); return false;">
+                                <img width="1" src="images/empty.png"><span>500</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>4&nbsp;065,35 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_900">
+                              <td onclick="set_charge_id(900,1000); return false;">
+                                <img width="1" src="images/empty.png"><span>1000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>5&nbsp;371,37 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_907">
+                              <td onclick="set_charge_id(907,2500); return false;">
+                                <img width="1" src="images/empty.png"><span>2500</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>9&nbsp;289,49 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_648">
+                              <td onclick="set_charge_id(648,5000); return false;">
+                                <img width="1" src="images/empty.png"><span>5000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>15&nbsp;819,66 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_901">
+                              <td onclick="set_charge_id(901,10000); return false;">
+                                <img width="1" src="images/empty.png"><span>10000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>28&nbsp;317,75 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_903">
+                              <td onclick="set_charge_id(903,15000); return false;">
+                                <img width="1" src="images/empty.png"><span>15000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>40&nbsp;815,87 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_905">
+                              <td onclick="set_charge_id(905,20000); return false;">
+                                <img width="1" src="images/empty.png"><span>20000</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>53&nbsp;314,02 р.</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                          <div id="price_infos" class="description red_color">
+                            Внимание. Цены отсутствуют.
+                          </div>
+                          <div id="charge_infos" class="description red_color" style="display: block;">
+                            Нажмите на выбранный тираж<br>
+                            для оформления заказа.
+                          </div>
+                          <!--<div id="own_charge" class="description"><a href="#" onclick="show_search_form_charge(); return false;">Указать свой тираж</a></div>-->
+                        </div>
+                        <input name="delay_id" id="delay_id" type="hidden" value="">
+                        <input name="checkout" type="hidden" value="1">
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <div class="print-dates">
+                    <h2>Сроки печати</h2>
+                    <div class="date-select">
+                      <div class="date-buttons">
+                        <div class="button button-print-date button-print-date-active">
+                          <span class="b-date">Пн, 27 янв.</span>
+                          <span class="b-price">2 268,70 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Ср, 29 янв.</span>
+                          <span class="b-price">1 864,09 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Пт, 31 янв.</span>
+                          <span class="b-price">1 770,90 р.</span>
+                        </div>
+                      </div>
+                      <div class="print-date-text">
+                        <p>Вы можете выбрать между стандарным, экспресс или экономичным сроком готовности.</p>
+                        <p>Пожалуйста, учитывайте, что при выборе дополнительной послепечатной отделки сроки готовности меняются.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-footer fc">
+                    <div class="button button-2 button-forward">Продолжить</div>
+                    <div class="button button-3 button-back">Назад</div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              
+              
+            </div>
+            
+            <div class="calc-wrapper">
+              <div class="calc-cont fc">
+                <div class="close"></div>
+                <div id="calc-8" class="print-calc-block">
+                  <div class="print-calc">
+                    <div id="steps" class="fc">
+                      <form id="product-form" action="/shop" method="POST">
+                        <div id="step-0" class="step step-0">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Ваш онлайн-заказ</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-0" class="options options-12">
+                            <table id="s-product">
+                            <tbody>
+                            <tr id="product_832">
+                              <td onclick="set_product_id(832); return false;">
+                                <span>Брошюра на скрепке</span>
+                              </td>
+                            </tr>
+                            <tr class="active" id="product_714">
+                              <td onclick="set_product_id(714); return false;">
+                                <span>Календарь перекидной</span>
+                              </td>
+                            </tr>
+                            <tr id="product_549">
+                              <td onclick="set_product_id(549); return false;">
+                                <span>Флаер/Листовка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_546">
+                              <td onclick="set_product_id(546); return false;">
+                                <span>Открытка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_544">
+                              <td onclick="set_product_id(544); return false;">
+                                <span>Визитные карточки</span>
+                              </td>
+                            </tr>
+                            <tr id="product_548">
+                              <td onclick="set_product_id(548); return false;">
+                                <span>Пригласительный</span>
+                              </td>
+                            </tr>
+                            <tr id="product_543">
+                              <td onclick="set_product_id(543); return false;">
+                                <span>Буклет/Лифлет</span>
+                              </td>
+                            </tr>
+                            <tr id="product_547">
+                              <td onclick="set_product_id(547); return false;">
+                                <span>Постер</span>
+                              </td>
+                            </tr>
+                            <tr id="product_542">
+                              <td onclick="set_product_id(542); return false;">
+                                <span>Бланк</span>
+                              </td>
+                            </tr>
+                            <tr id="product_437">
+                              <td onclick="set_product_id(437); return false;">
+                                <span>Папка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_545">
+                              <td onclick="set_product_id(545); return false;">
+                                <span>Наклейка</span>
+                              </td>
+                            </tr>
+                            <tr id="product_661">
+                              <td onclick="set_product_id(661); return false;">
+                                <span>Электростатическая наклейка</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-1" class="step step-1">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Бумага</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-1" class="options options-1">
+                            <table id="s-paper">
+                            <tbody>
+                            <tr class="active" id="paper_785">
+                              <td onclick="set_paper_id(785); return false;">
+                                <img width="1" src="images/empty.png"><span>Обложка 350 г/м матовая мелованная, блок 250 г/м </span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-2" class="step step-2">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Размер</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-2" class="options options-3">
+                            <table id="s-size">
+                            <tbody>
+                            <tr id="own_format">
+                              <td data="own_format" onclick="show_search_form_format(); return false;">
+                                <img width="1" src="images/empty.png"><span>Свой размер</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1805" class="active">
+                              <td data="297x210" onclick="set_format_id(1805); return false;">
+                                <img width="1" src="images/empty.png"><span>A4 вертикальный или горизонтальный (297x210)</span>
+                              </td>
+                            </tr>
+                            <tr id="format_1804">
+                              <td data="297x420" onclick="set_format_id(1804); return false;">
+                                <img width="1" src="images/empty.png"><span>А3 вертикальный или горизонтальный (297х420)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-3" class="step step-3">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Краски</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-3" class="options options-1">
+                            <table id="s-color">
+                            <tbody>
+                            <tr class="active" id="color_309">
+                              <td onclick="set_color_id(309); return false;">
+                                <img width="1" src="images/empty.png"><span>Односторонняя полноцветная печать (4+0)</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                        </div>
+                        <div id="step-5" class="step step-1" style="display: none;">
+                        </div>
+                        <div id="step-4" class="step step-4">
+                          <div class="dummy" style="display: none;">
+                          </div>
+                          <div class="wait" style="display: none;">
+                          </div>
+                          <h2>Тираж</h2>
+                          <a class="scroll up disabled">&nbsp;</a>
+                          <div id="table-4" class="options options-7">
+                            <table id="s-quantity">
+                            <tbody>
+                            <tr id="charge_1082">
+                              <td onclick="set_charge_id(1082,10); return false;">
+                                <img width="1" src="images/empty.png"><span>10</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>4&nbsp;285,10 р.</span>
+                              </td>
+                            </tr>
+                            <tr class="active" id="charge_1085">
+                              <td onclick="set_charge_id(1085,25); return false;">
+                                <img width="1" src="images/empty.png"><span>25</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>7&nbsp;007,75 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_646">
+                              <td onclick="set_charge_id(646,50); return false;">
+                                <img width="1" src="images/empty.png"><span>50</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>11&nbsp;545,50 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1090">
+                              <td onclick="set_charge_id(1090,75); return false;">
+                                <img width="1" src="images/empty.png"><span>75</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>16&nbsp;083,25 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_899">
+                              <td onclick="set_charge_id(899,100); return false;">
+                                <img width="1" src="images/empty.png"><span>100</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>20&nbsp;621,00 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1083">
+                              <td onclick="set_charge_id(1083,150); return false;">
+                                <img width="1" src="images/empty.png"><span>150</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>29&nbsp;696,49 р.</span>
+                              </td>
+                            </tr>
+                            <tr id="charge_1084">
+                              <td onclick="set_charge_id(1084,200); return false;">
+                                <img width="1" src="images/empty.png"><span>200</span>
+                              </td>
+                              <td class="result">
+                                <img width="1" src="images/empty.png"><span>38&nbsp;771,99 р.</span>
+                              </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                          <a class="scroll down">&nbsp;</a>
+                          <div id="price_infos" class="description red_color">
+                            Внимание. Цены отсутствуют.
+                          </div>
+                          <div id="charge_infos" class="description red_color" style="display: block;">
+                            Нажмите на выбранный тираж<br>
+                            для оформления заказа.
+                          </div>
+                          <!--<div id="own_charge" class="description"><a href="#" onclick="show_search_form_charge(); return false;">Указать свой тираж</a></div>-->
+                        </div>
+                        <input name="delay_id" id="delay_id" type="hidden" value="">
+                        <input name="checkout" type="hidden" value="1">
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <div class="print-dates">
+                    <h2>Сроки печати</h2>
+                    <div class="date-select">
+                      <div class="date-buttons">
+                        <div class="button button-print-date button-print-date-active">
+                          <span class="b-date">Пн, 27 янв.</span>
+                          <span class="b-price">2 268,70 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Ср, 29 янв.</span>
+                          <span class="b-price">1 864,09 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Пт, 31 янв.</span>
+                          <span class="b-price">1 770,90 р.</span>
+                        </div>
+                      </div>
+                      <div class="print-date-text">
+                        <p>Вы можете выбрать между стандарным, экспресс или экономичным сроком готовности.</p>
+                        <p>Пожалуйста, учитывайте, что при выборе дополнительной послепечатной отделки сроки готовности меняются.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-footer fc">
+                    <div class="button button-2 button-forward">Продолжить</div>
+                    <div class="button button-3 button-back">Назад</div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              
+              
+            </div>
+            
+            <div class="calc-wrapper">
+              <div class="calc-cont fc">
+                <div class="close"></div>
+                <div id="calc-9" class="print-calc-block">
+                  <div class="print-calc">
+                    <div id="steps" class="fc">
+                      <form id="product-form" action="/shop" method="POST">
+
+                        <div id="step-0" class="step step-0">
+                            <div class="dummy" style="display: none;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Ваш онлайн-заказ</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-0" class="options options-12"><table id="s-product"><tbody><tr id="product_832"><td onclick="set_product_id(832); return false;"><span>Брошюра на скрепке</span></td></tr><tr class="" id="product_714"><td onclick="set_product_id(714); return false;"><span>Календарь перекидной</span></td></tr><tr id="product_549"><td onclick="set_product_id(549); return false;"><span>Флаер/Листовка</span></td></tr><tr id="product_546"><td onclick="set_product_id(546); return false;"><span>Открытка</span></td></tr><tr id="product_544"><td onclick="set_product_id(544); return false;"><span>Визитные карточки</span></td></tr><tr id="product_548"><td onclick="set_product_id(548); return false;"><span>Пригласительный</span></td></tr><tr id="product_543" class="active"><td onclick="set_product_id(543); return false;"><span>Буклет/Лифлет</span></td></tr><tr id="product_547"><td onclick="set_product_id(547); return false;"><span>Постер</span></td></tr><tr id="product_542"><td onclick="set_product_id(542); return false;"><span>Бланк</span></td></tr><tr id="product_437"><td onclick="set_product_id(437); return false;"><span>Папка</span></td></tr><tr id="product_545"><td onclick="set_product_id(545); return false;"><span>Наклейка</span></td></tr><tr id="product_661"><td onclick="set_product_id(661); return false;"><span>Электростатическая наклейка</span></td></tr></tbody></table></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-1" class="step step-1">
+                            <div class="dummy" style="display: none;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Бумага</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-1" class="options options-6"><table id="s-paper"><tbody><tr id="paper_549"><td onclick="set_paper_id(549); return false;"><img width="1" src="images/empty.png"><span>115г глянцевая мелованная</span></td></tr><tr id="paper_550"><td onclick="set_paper_id(550); return false;"><img width="1" src="images/empty.png"><span>150г  матовая мелованная</span></td></tr><tr id="paper_552" class="active"><td onclick="set_paper_id(552); return false;"><img width="1" src="images/empty.png"><span>150г мелованная матовая или глянцевая на наше усмотрение (скидка 5%)</span></td></tr><tr id="paper_551"><td onclick="set_paper_id(551); return false;"><img width="1" src="images/empty.png"><span>150г глянцевая мелованная</span></td></tr><tr id="paper_553"><td onclick="set_paper_id(553); return false;"><img width="1" src="images/empty.png"><span>250г матовая мелованная</span></td></tr><tr id="paper_555"><td onclick="set_paper_id(555); return false;"><img width="1" src="images/empty.png"><span>350г  матовая мелованная</span></td></tr></tbody></table></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-2" class="step step-2">
+                            <div class="dummy" style="display: none;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Размер</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-2" class="options options-12"><table id="s-size"><tbody><tr id="own_format"><td data="own_format" onclick="show_search_form_format(); return false;"><img width="1" src="images/empty.png"><span>Свой размер</span></td></tr><tr id="format_1199"><td data="148x105" onclick="set_format_id(1199); return false;"><img width="1" src="images/empty.png"><span>A6 (148x105)</span></td></tr><tr id="format_1155"><td data="210x105" onclick="set_format_id(1155); return false;"><img width="1" src="images/empty.png"><span>210x105</span></td></tr><tr id="format_1164"><td data="297x105" onclick="set_format_id(1164); return false;"><img width="1" src="images/empty.png"><span>297x105</span></td></tr><tr id="format_1198"><td data="210x148" onclick="set_format_id(1198); return false;"><img width="1" src="images/empty.png"><span>A5 (210x148)</span></td></tr><tr id="format_1156"><td data="210x210" onclick="set_format_id(1156); return false;"><img width="1" src="images/empty.png"><span>210x210</span></td></tr><tr id="format_1172"><td data="420x105" onclick="set_format_id(1172); return false;"><img width="1" src="images/empty.png"><span>420x105</span></td></tr><tr id="format_1197"><td data="297x210" onclick="set_format_id(1197); return false;"><img width="1" src="images/empty.png"><span>A4 (297x210)</span></td></tr><tr id="format_1174"><td data="420x210" onclick="set_format_id(1174); return false;"><img width="1" src="images/empty.png"><span>420x210</span></td></tr><tr id="format_1196"><td data="420x297" onclick="set_format_id(1196); return false;"><img width="1" src="images/empty.png"><span>A3 (420x297)</span></td></tr><tr id="format_1202"><td data="630x297" onclick="set_format_id(1202); return false;"><img width="1" src="images/empty.png"><span>Евробуклет (630x297)</span></td></tr><tr id="format_1195"><td data="594x420" onclick="set_format_id(1195); return false;"><img width="1" src="images/empty.png"><span>A2 (594x420)</span></td></tr></tbody></table></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-3" class="step step-3">
+                            <div class="dummy" style="display: block;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Краски</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-3" class="options options-1"><img src="images/dummy_images/color_dummy.png" alt=""></div>
+                            <a class="scroll down">&nbsp;</a>
+                        </div>
+
+                        <div id="step-5" class="step step-1" style="">
+
+                        <div class="dummy" style="display: block;"></div>
+                        <div class="wait" style="display: none;"></div>
+                        <h2>Фальцовка</h2>
+                        <a class="scroll up disabled">&nbsp;</a>
+                        <div id="table-5" class="options"><img src="images/dummy_images/fold_dummy.png" alt=""></div>
+                        <a class="scroll down">&nbsp;</a>
+                        <div id="show_fold" class="description"></div>
+
+                        </div>
+
+                        <div id="step-4" class="step step-4">
+                            <div class="dummy" style="display: block;"></div>
+                            <div class="wait" style="display: none;"></div>
+                            <h2>Тираж</h2>
+                            <a class="scroll up disabled">&nbsp;</a>
+                            <div id="table-4" class="options options-7"><img src="images/dummy_images/charge_dummy.png" alt=""></div>
+                            <a class="scroll down">&nbsp;</a>
+                          <div id="price_infos" class="description red_color">Внимание. Цены отсутствуют.</div>
+                          <div id="charge_infos" class="description red_color" style="display: none;">Нажмите на выбранный тираж<br>для оформления заказа.</div>
+                            <!--<div id="own_charge" class="description"><a href="#" onclick="show_search_form_charge(); return false;">Указать свой тираж</a></div>-->
+                        </div>
+
+                        <input name="delay_id" id="delay_id" type="hidden" value="">
+                        <input name="checkout" type="hidden" value="1">
+
+                        </form>
+                    </div>
+                  </div>
+                  
+                  <div class="print-dates">
+                    <h2>Сроки печати</h2>
+                    <div class="date-select">
+                      <div class="date-buttons">
+                        <div class="button button-print-date button-print-date-active">
+                          <span class="b-date">Пн, 27 янв.</span>
+                          <span class="b-price">2 268,70 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Ср, 29 янв.</span>
+                          <span class="b-price">1 864,09 р.</span>
+                        </div>
+                        <div class="button button-print-date">
+                          <span class="b-date">Пт, 31 янв.</span>
+                          <span class="b-price">1 770,90 р.</span>
+                        </div>
+                      </div>
+                      <div class="print-date-text">
+                        <p>Вы можете выбрать между стандарным, экспресс или экономичным сроком готовности.</p>
+                        <p>Пожалуйста, учитывайте, что при выборе дополнительной послепечатной отделки сроки готовности меняются.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-footer fc">
+                    <div class="button button-2 button-forward">Продолжить</div>
+                    <div class="button button-3 button-back">Назад</div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              
+              
+            </div>
+            
+            
+            
+          </div>
+        	
+        </div>
+      </div>
+      
+      <div class="main-clients">
+        <div class="center-wrapper">
+          <h2 class="main-block-ttl"><span>Наши клиенты</span></h2>
+          <div class="clients-carousel fc">
+            <ul class="jcarousel">
+              <li><a href="#"><img src="files/logo-neovita.png" /></a></li>
+              <li><a href="#"><img src="files/logo-diamond.png" /></a></li>
+              <li><a href="#"><img src="files/logo-wth.png" /></a></li>
+              <li><a href="#"><img src="files/logo-neovita.png" /></a></li>
+              <li><a href="#"><img src="files/logo-diamond.png" /></a></li>
+              <li><a href="#"><img src="files/logo-wth.png" /></a></li>
+              <li><a href="#"><img src="files/logo-neovita.png" /></a></li>
+              <li><a href="#"><img src="files/logo-diamond.png" /></a></li>
+              <li><a href="#"><img src="files/logo-wth.png" /></a></li>
+              <li><a href="#"><img src="files/logo-neovita.png" /></a></li>
+              <li><a href="#"><img src="files/logo-diamond.png" /></a></li>
+              <li><a href="#"><img src="files/logo-wth.png" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-about">
+        <div class="main-about-cont-wrapper">
+          <div class="main-about-cont">
+          
+            <div class="center-wrapper">
+            
+              <div class="fc">
+              
+                <div class="main-about-l">
+                  <div class="main-about-menu">
+                    <div class="main-about-menu-cont">
+                      <ul>
+                        <li><a href="about-about">О Ренпринте</a></li>
+                        <li><a href="about-how">Как заказать</a></li>
+                        <li><a href="about-products">Продукция</a></li>
+                        <li><a href="about-payment">Безопасная оплата</a></li>
+                        <li><a href="about-shipping">Доставка</a></li>
+                        <li><a href="about-reqs">Требования и инструкции</a></li>
+                        <li><a href="about-articles">Статьи о полиграфии</a></li>
+                        <li><a href="about-templates">Макеты для скачивания</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="main-about-r">
+                  <div id="about-about" class="about-content">
+                    <h2>О Ренпринте</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                  <div id="about-how" style="display:none;" class="about-content">
+                    <h2>Как заказать</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                  <div id="about-products" style="display:none;" class="about-content">
+                    <h2>Продукция</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                  <div id="about-payment" style="display:none;" class="about-content">
+                    <h2>Безопасная оплата</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                  <div id="about-shipping" style="display:none;" class="about-content">
+                    <h2>Доставка</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                  <div id="about-reqs" style="display:none;" class="about-content">
+                    <h2>Требования и инструкции</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                  <div id="about-articles" style="display:none;" class="about-content">
+                    <h2>Статьи о полиграфии</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                  <div id="about-templates" style="display:none;" class="about-content">
+                    <h2>Макеты для скачивания</h2>
+                    
+                    <p>Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли. Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет? Времена, когда печатать что-нибудь можно было исключительно на бумаге, давно прошли.</p>
+                    <p>Наверняка в вашем хозяйстве имеются ручки, чашки и прочие предметы, на которых что-то напечатано. Именно напечатано, а не нарисовано. Как же происходит такая печать? В какой же “принтер” можно вместо бумаги заправить крупный и твердый предмет?</p>
+                    
+                  </div>
+                </div>
+              
+              </div>
+            
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-reviews">
+        <div class="center-wrapper">
+        
+          <h2>Кейсы и отзывы</h2>
+        
+          <div class="reviews-carousel fc">
+            <ul class="jcarousel">
+              <li>
+                <div class="pic">
+                  <img src="files/reviews-1.jpg" />
+                </div>
+                <div class="descr">
+                  <div class="userpic">
+                    <img src="files/review-userpic.jpg" />
+                  </div>
+                  
+                  <div class="post">
+                    Дмитрий Пухов
+                    <div>Генеральный директор в Даймонд кейтеринг</div>
+                  </div>
+                  
+                  <div class="review">
+                    <div class="review-cont">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел! Ребята настоящие помощники в решении бизнес-задач.
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                  <img src="files/reviews-2.jpg" />
+                </div>
+                <div class="descr">
+                  <div class="userpic">
+                    <img src="files/review-userpic.jpg" />
+                  </div>
+                  
+                  <div class="post">
+                    Константин Константинопольский
+                    <div>Генеральный директор Вселенной</div>
+                  </div>
+                  
+                  <div class="review">
+                    <div class="review-cont">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел! Ребята настоящие помощники в решении бизнес-задач.
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                  <img src="files/reviews-3.jpg" />
+                </div>
+                <div class="descr">
+                  <div class="userpic">
+                    <img src="files/review-userpic.jpg" />
+                  </div>
+                  
+                  <div class="post">
+                    Александр Петров
+                    <div>Генеральный директор в Даймонд кейтеринг</div>
+                  </div>
+                  
+                  <div class="review">
+                    <div class="review-cont">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел! Ребята настоящие помощники в решении бизнес-задач.
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                  <img src="files/reviews-1.jpg" />
+                </div>
+                <div class="descr">
+                  <div class="userpic">
+                    <img src="files/review-userpic.jpg" />
+                  </div>
+                  
+                  <div class="post">
+                    Дмитрий Пухов
+                    <div>Генеральный директор в Даймонд кейтеринг</div>
+                  </div>
+                  
+                  <div class="review">
+                    <div class="review-cont">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел! Ребята настоящие помощники в решении бизнес-задач.
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                  <img src="files/reviews-2.jpg" />
+                </div>
+                <div class="descr">
+                  <div class="userpic">
+                    <img src="files/review-userpic.jpg" />
+                  </div>
+                  
+                  <div class="post">
+                    Константин Константинопольский
+                    <div>Генеральный директор Вселенной</div>
+                  </div>
+                  
+                  <div class="review">
+                    <div class="review-cont">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел! Ребята настоящие помощники в решении бизнес-задач.
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                  <img src="files/reviews-3.jpg" />
+                </div>
+                <div class="descr">
+                  <div class="userpic">
+                    <img src="files/review-userpic.jpg" />
+                  </div>
+                  
+                  <div class="post">
+                    Александр Петров
+                    <div>Генеральный директор в Даймонд кейтеринг</div>
+                  </div>
+                  
+                  <div class="review">
+                    <div class="review-cont">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел! Ребята настоящие помощники в решении бизнес-задач.
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-poss">
+        <div class="main-poss-wrapper">
+          <div class="main-poss-cont">
+            <div class="center-wrapper">
+            
+              <h2>Наши уникальные возможности</h2>
+            
+              <div class="poss-items fc">
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-1.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">Визитки на трехслойной бумаге Triplex</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-2.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">Печать по черному полноцветом</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-3.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">3D объемный лак</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-4.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">Высокая печать</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-5.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">Флуоресцентная печать</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-6.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">Gold foil</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-7.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">Стерео-варио печать</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-8.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">Прямая печать по металлу</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="poss-item">
+                  <span class="pic">
+                    <img src="files/poss-9.jpg" />
+                    <div class="pic-mask"></div>
+                  </span>
+                  <span class="descr">
+                    <span class="ttl">
+                      <span class="ttl-cont">УФ-лакирование с эффектом Drip-off</span>
+                    </span>
+                    <span class="text">
+                      Это настоящий профессиональный сервис, удобно, быстро, а главное - понятно простому смертному, далекому от полиграфических дел!
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-socwidgets">
+        <div class="center-wrapper">
+          <h2>Присоединяйтесь к нам!</h2>
+          
+          <div class="socwidgets-cont">
+            <div class="socwidgets-cols fc">
+              <div class="sw-item">
+                <h3><span>Facebook</span></h3>
+                <div class="fb-widget-content">
+                  <div id="fb-root"></div>
+                  <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));</script>
+                  <div class="fb-like-box" data-href="http://www.facebook.com/renprint" data-width="445" data-height="300" data-show-faces="true" data-show-border="false" data-stream="false" data-border-color="#ffffff" data-header="false"></div>
+                </div>
+              </div>
+              <div class="sw-item">
+                <h3><span>Twitter</span></h3>
+                <a class="twitter-timeline" href="https://twitter.com/RenPrint" data-widget-id="379618215086682112" width='490' height='300'>Твиты пользователя @RenPrint</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="main-contacts">
+        <div class="center-wrapper">
+        	<div class="contacts-map-wrapper">
+        		<div class="contacts-map" id="contactsMap"></div>
+            <div class="contacts-descr">
+              <h2>наши контакты</h2>
+              <div class="phone">
+                +7 (495) 642-15-11
+              </div>
+              <p>119180, Россия, г. Москва,<br />Москва,<br />Вашравское ш., 2</p>
+              <p><a href="mailto:print@renprint.ru">print@renprint.ru</a></p>
+            </div>
+        	</div>
+        	<script type="text/javascript" src="js/contacts-map.js"></script>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+    
+    
+  </div>
+
+</div>
+
+<div class="footer">
+
+  <div class="main-order">
+    <div class="center-wrapper">
+      <h2>
+        Остались вопросы?
+        <div>Оставьте заявку и мы вам перезвоним</div>
+      </h2>
+      <div class="common-form order-form">
+        <div class="form-cont">
+          <form action="." id="orderForm1">
+            <div class="form-row fc">
+              <div class="form-item errors-top">
+                <label class="placeholder" for="order_1_name">Ваше имя</label>
+                <input type="text" class="form-text" name="order_1_name" id="order_1_name" required />
+              </div>
+              <div class="form-item errors-top">
+                <label class="placeholder" for="order_1_phone">Телефон</label>
+                <input type="text" class="form-text form-phone" name="order_1_phone" id="order_1_phone" />
+              </div>
+              <div class="form-item errors-top">
+                <label class="placeholder" for="order_1_email">E-mail</label>
+                <input type="text" class="form-text form-email" name="order_1_email" id="order_1_email" />
+              </div>
+            </div>
+            <div class="form-item">
+              <label class="placeholder" for="order_1_message">Ваш вопрос</label>
+              <textarea class="form-textarea" name="order_1_message" id="order_1_message" rows="5"></textarea>
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Отправить" class="form-submit button button-2"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-cont">
+  	<div class="center-wrapper">
+  	  <p>
+  	    Renaissance Print &copy; 2013<br />
+  	    Все права защищены. Ренессанс Принт™ является товарным знаком компании Renaissance Art Group
+  	  </p>
+  	  <p>
+  	    <a href="#">Условия пользования сайтом</a>
+  	  </p>
+  	</div>
+  </div>
+</div>
+
+<!-- Popups -->
+
+<div class="popup login-popup" id="loginPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>добро пожаловать на сайт renprint.ru!</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <div class="login-contet fc">
+        <div class="login-l">
+          <h3>Вход на сайт</h3>
+          <div class="common-form login-form">
+            <form action=".">
+              <div class="form-item errors-left">
+                <label class="placeholder" for="login_email">Электронная почта</label>
+                <input type="text" class="form-text form-email" name="login_email" id="login_email" required />
+              </div>
+              <div class="form-item errors-left">
+                <label class="placeholder" for="login_password">Пароль</label>
+                <input type="password" class="form-text form-password" name="login_password" id="login_password" required />
+              </div>
+              <div class="form-footer">
+                <input type="submit" value="Войти" class="button button-1"/>
+                <div class="form-forgot"><a href="#">Я забыл пароль</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-r">
+          <h3>я новый пользователь</h3>
+          <div class="text">
+            <p>Чтобы полноценно пользоваться нашим сайтом, вам необходимо зарегистрироваться. Это просто и займет всего одну минуту.</p>
+          </div>
+          <a href="#" class="button button-2"><strong>Зарегистрироваться</strong></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup order-popup" id="orderPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Отправить заявку</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <div class="common-form order-form-2">
+        <input type="hidden" name="order_2_kind" id="order_2_kind" />
+        <div class="form-cont">
+          <form action="." id="orderForm2">
+            <div class="form-item errors-left">
+              <label class="placeholder" for="order_2_name">Ваше имя</label>
+              <input type="text" class="form-text" name="order_2_name" id="order_2_name" required />
+            </div>
+            <div class="form-row fc">
+              <div class="form-item errors-left">
+                <label class="placeholder" for="order_2_phone">Телефон</label>
+                <input type="text" class="form-text form-phone" name="order_2_phone" id="order_2_phone" />
+              </div>
+              <div class="form-item">
+                <label class="placeholder" for="order_2_email">E-mail</label>
+                <input type="text" class="form-text form-email" name="order_2_email" id="order_2_email" />
+              </div>
+            </div>
+            <div class="form-item">
+              <label class="placeholder" for="order_2_message">Ваш вопрос</label>
+              <textarea class="form-textarea" name="order_2_message" id="order_2_message" rows="5"></textarea>
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Отправить" class="form-submit button button-2"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup callback-popup" id="callbackPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Заказать звонок</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <div class="common-form callback-form">
+        <div class="form-cont">
+          <form action="." id="callbackForm">
+            <div class="form-item errors-left">
+              <label class="placeholder" for="callback_name">Ваше имя</label>
+              <input type="text" class="form-text" name="callback_name" id="callback_name" required />
+            </div>
+            <div class="form-item errors-left">
+              <label class="placeholder" for="callback_phone">Телефон</label>
+              <input type="text" class="form-text form-phone" name="callback_phone" id="callback_phone" required />
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Отправить" class="form-submit button button-2"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup callback-popup" id="successPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Спасибо!</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <p>Ваша заявка принята. В ближайшее время с<br />вами свяжется наш менеджер.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Popups END -->
+
+</body>
+
+</html>
