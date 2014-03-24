@@ -1735,6 +1735,7 @@ label {
   font-weight: bold;
 }
 
+.account-form fieldset,
 .password-form fieldset,
 #payment-right fieldset,
 .address_block fieldset,
@@ -3889,6 +3890,7 @@ span.cancelled {
   margin:-9px 0 -10px 0;
 }
 
+.account-form dt,
 .password-form dt {
   width:120px;
   padding:7px 20px 0 0;
@@ -3897,15 +3899,18 @@ span.cancelled {
   float:left;
 }
 
+.account-form dd,
 .password-form dd {
   float:left;
   width:510px;
 }
 
+.account-form input[type='text'],
 .password-form input[type='text'] {
   width:316px;
 }
 
+.account-form dl,
 .password-form dl {
   margin:0 0 10px 0;
 }
@@ -3914,6 +3919,7 @@ span.cancelled {
   margin:0 0 10px 0;
 }
 
+.account-form fieldset,
 .password-form fieldset {
   margin:0 0 20px 0;
 }
@@ -4065,4 +4071,23 @@ span.cancelled {
 
 .popup .form-footer {
   padding:5px 0 0 0;
+}
+
+.account-form h3 {
+  font-size:14px;
+	font-weight:bold;
+	margin:35px 0 10px 0;
+}
+
+.account-form h3:first-child {
+  margin:-6px 0 17px 0;
+}
+
+.account-form .param-selector {
+  width:316px;
+}
+
+.account-form .field-content {
+  font-weight:600;
+	padding:7px 0 0 0;
 }

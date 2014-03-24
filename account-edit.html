@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ренпринт - Личный кабинет - Личные данные</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="js/masked.input.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicefileinput.min.js"></script>
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body class="page-inner">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="top-wrap">
+
+  <div class="top-main">
+    
+    <div class="header header-inner">
+      
+      <div class="main-menu-wrapper">
+        <div class="center-wrapper">
+        	<ul class="main-menu">
+        	  <li><a href="#">Калькулятор</a></li>
+        	  <li><a href="#">Почему мы?</a></li>
+        	  <li><a href="#">Как мы работаем</a></li>
+        	  <li><a href="#">Наши возможности</a></li>
+        	  <li><a href="#">Получи скидку</a></li>
+        	  <li><a href="#">Портфолио</a></li>
+        	  <li><a href="#">Контакты</a></li>
+        	</ul>
+        </div>
+      </div>
+      
+      <div class="header-bottom fc">
+        <div class="center-wrapper">
+        	<div class="header-l">
+        	  <div class="header-schedule">
+        	    Звоните с 10.00 до 20.00 ежедневно
+        	  </div>
+        	  <div class="header-phone">
+        	    +7 (495) 642-15-11
+        	  </div>
+        	  <div class="header-callback">
+        	    <span class="callback-trigger" onclick="openPopup('callbackPopup')">Заказать обратный звонок</span>
+        	  </div>
+        	</div>
+        	<div class="logo">
+        	  <a href="#"><img src="images/logo.png" alt="Renaissanse Art Group"/></a>
+        	</div>
+        	<div class="header-r">
+        	  <div class="user-block">
+        	    <a href="#">Личный кабинет</a>
+        	  </div>
+        	  <div class="header-cart">
+        	    <div class="button button-cart">2 продукта <span>14 769,15 р.</span></div>
+        	  </div>
+        	  <div class="button button-4" onclick="openPopup('orderPopup')">Оставить заявку</div>
+        	</div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="body">
+    
+      
+      <div class="center-wrapper">
+      	<div id="calc" class="flow">
+      	  <div id="steps">
+      	    <div class="account-div fc">
+      	      <div class="account-left">
+      	        <div id="account" class="block myaccount account-in">
+      	          <div class="account-ttl">Здравствуйте, <strong>Константин</strong></div>
+      	          <div class="block_content">
+      	            <ul>
+      	              <li class="act"><a title="Мои личные данные" href="/user">Мои личные данные</a></li>
+      	              <li><a title="Мои заказы" href="/user/show-order">Мои заказы</a></li>
+      	              <li><a title="Мои расчеты" href="/user/show-saved">Мои расчеты</a></li>
+      	              <li><a title="Мой пароль" href="/user/request/email/dt@renart.ru">Изменить пароль</a></li>
+      	              <li><a title="Мои купоны" href="/user">Мои купоны</a></li>
+      	              <li><a title="Сделать доплату к заказу" href="/web/payment">Сделать доплату к заказу</a></li>
+      	            </ul>
+      	            <p class="logout">
+      	              <a class="button button-8" title="Выход" href="/user/logout">Выйти</a>
+      	            </p>
+      	            <br>
+      	          </div>
+      	        </div>
+      	      </div>
+      	      <div class="account-right">
+                <h2>Мои данные</h2>
+                
+                <div class="common-form account-form">
+                	<form enctype="application/x-www-form-urlencoded" autocomplete="off" action="/user/request" method="post" class="password_1">
+                	  <fieldset>
+											<h3>Личные данные</h3>
+											<dl class="dl_name">
+                	  	  <dt id="name-label"><label for="name" class="required">Имя</label></dt>
+                	  	  <dd id="name-element">
+                	  	  <input type="text" name="name" id="name" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_lastname">
+                	  	  <dt id="lastname-label"><label for="lastname" class="required">Фамилия</label></dt>
+                	  	  <dd id="lastname-element">
+                	  	  <input type="text" name="lastname" id="lastname" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<h3>Контакты</h3>
+											<dl class="dl_email">
+                	  	  <dt id="email-label"><label for="email" class="required">Email адрес</label></dt>
+                	  	  <dd id="email-element">
+                	  	  <input type="text" name="email" id="email" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_phone">
+                	  	  <dt id="phone-label"><label for="phone" class="required">Телефон</label></dt>
+                	  	  <dd id="phone-element">
+                	  	  <input type="text" name="phone" id="phone" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_mobile">
+                	  	  <dt id="mobile-label"><label for="mobile" class="required">Моб. телефон</label></dt>
+                	  	  <dd id="mobile-element">
+                	  	  <input type="text" name="mobile" id="mobile" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_street">
+                	  	  <dt id="street-label"><label for="street" class="required">Улица</label></dt>
+                	  	  <dd id="street-element">
+                	  	  <input type="text" name="street" id="street" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_home">
+                	  	  <dt id="home-label"><label for="home" class="required">Номер дома</label></dt>
+                	  	  <dd id="home-element">
+                	  	  <input type="text" name="home" id="home" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_country">
+                	  	  <dt id="country-label"><label for="country" class="required">Страна</label></dt>
+                	  	  <dd id="country-element">
+                	  	  <select name="country" id="country">
+													<option value="1">Россия</option>
+													<option value="2">Украина</option>
+													<option value="3">Казахстан</option>
+													<option value="4">США</option>
+													<option value="5">Британские Виргинские Острова</option>
+												</select>
+                	  	</dl>
+											<dl class="dl_index">
+                	  	  <dt id="index-label"><label for="index" class="required">Индекс</label></dt>
+                	  	  <dd id="index-element">
+                	  	  <input type="text" name="index" id="index" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_city">
+                	  	  <dt id="city-label"><label for="city" class="required">Город</label></dt>
+                	  	  <dd id="city-element">
+                	  	  <input type="text" name="city" id="city" size="32" maxlength="100"></dd>
+                	  	</dl>
+											<dl class="dl_region">
+                	  	  <dt id="region-label"><label for="region" class="required">Область</label></dt>
+                	  	  <dd id="region-element">
+                	  	  <input type="text" name="region" id="region" size="32" maxlength="100"></dd>
+                	  	</dl>
+                	  </fieldset>
+                	  <dl class="dl_send">
+                	    <dd>
+												<input type="submit" name="send" id="send" value="Отменить" class="send_1 button button-3">
+												<input type="submit" name="send" id="send" value="Сохранить" class="send_1 button button-2">
+											</dd>
+                	  </dl>
+                	</form>
+                </div>
+              </div>
+      	    </div>
+      	    
+      	  </div>
+      	</div>
+      </div>
+      
+      
+    </div>
+    
+    
+  </div>
+
+</div>
+
+<div class="footer">
+
+  <div class="footer-cont">
+  	<div class="center-wrapper">
+  	  <p>
+  	    Renaissance Print &copy; 2013<br />
+  	    Все права защищены. Ренессанс Принт™ является товарным знаком компании Renaissance Art Group
+  	  </p>
+  	  <p>
+  	    <a href="#">Условия пользования сайтом</a>
+  	  </p>
+  	</div>
+  </div>
+  
+</div>
+
+<!-- Popups -->
+
+<div class="popup order-popup" id="orderPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Отправить заявку</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <div class="common-form order-form-2">
+        <input type="hidden" name="order_2_kind" id="order_2_kind" />
+        <div class="form-cont">
+          <form action="." id="orderForm2">
+            <div class="form-item errors-left">
+              <label class="placeholder" for="order_2_name">Ваше имя</label>
+              <input type="text" class="form-text" name="order_2_name" id="order_2_name" required />
+            </div>
+            <div class="form-row fc">
+              <div class="form-item errors-left">
+                <label class="placeholder" for="order_2_phone">Телефон</label>
+                <input type="text" class="form-text form-phone" name="order_2_phone" id="order_2_phone" />
+              </div>
+              <div class="form-item">
+                <label class="placeholder" for="order_2_email">E-mail</label>
+                <input type="text" class="form-text form-email" name="order_2_email" id="order_2_email" />
+              </div>
+            </div>
+            <div class="form-item">
+              <label class="placeholder" for="order_2_message">Ваш вопрос</label>
+              <textarea class="form-textarea" name="order_2_message" id="order_2_message" rows="5"></textarea>
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Отправить" class="form-submit button button-2"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup callback-popup" id="callbackPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Заказать звонок</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <div class="common-form callback-form">
+        <div class="form-cont">
+          <form action="." id="callbackForm">
+            <div class="form-item errors-left">
+              <label class="placeholder" for="callback_name">Ваше имя</label>
+              <input type="text" class="form-text" name="callback_name" id="callback_name" required />
+            </div>
+            <div class="form-item errors-left">
+              <label class="placeholder" for="callback_phone">Телефон</label>
+              <input type="text" class="form-text form-phone" name="callback_phone" id="callback_phone" required />
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Отправить" class="form-submit button button-2"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup callback-popup" id="successPopup">
+  <div class="popup-content">
+    <div class="ttl">
+      <h2>Спасибо!</h2>
+      <div class="close"></div>
+    </div>
+    <div class="form-wrapper">
+      <p>Ваша заявка принята. В ближайшее время с<br />вами свяжется наш менеджер.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Popups END -->
+
+</body>
+
+</html>
