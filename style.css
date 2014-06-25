@@ -1073,7 +1073,7 @@ label {
 
 .header-bottom {
   height:138px;
-  background:#f8f7f3;
+  /* background:#f8f7f3; */
   position:relative;
   padding:44px 0 0 0;
 }
@@ -1137,17 +1137,19 @@ label {
 }
 
 .main-slider {
-  height:408px;
+  height:546px;
   position:relative;
+	top:-138px;
   background:#f8f7f3;
   overflow:hidden;
+	margin:0 0 -138px 0;
 }
 
 .main-slider-edge {
   height:5px;
   width:100%;
   position:absolute;
-  z-index:13;
+  z-index:11;
   bottom:0;
   background:url(images/edge-bottom.png) 0 0 repeat-x;
 }
@@ -1157,9 +1159,10 @@ label {
   width: 250px;
   border-top: 1px solid #c2b249;
   padding: 20px 0 0 0;
-  z-index: 11;
-  left: 50px;
-  top: 279px;
+  z-index: 10;
+  left: 50%;
+	margin-left:-460px;
+  top: 417px;
 }
 
 .main-slider .prev {
@@ -1170,7 +1173,7 @@ label {
   left:-4px;
   top:34px;
   cursor:pointer;
-  z-index:12;
+  z-index:11;
 }
 
 .main-slider .prev:hover {
@@ -1185,7 +1188,7 @@ label {
   right:-4px;
   top:34px;
   cursor:pointer;
-  z-index:12;
+  z-index:11;
 }
 
 .main-slider .next:hover {
@@ -1201,14 +1204,18 @@ label {
   left:0;
   right:0;
   width:100%;
-  height:408px;
+  height:546px;
 }
 
 .main-slider .pic {
   position:absolute;
   z-index:4;
-  bottom:0;
-  left:199px;
+  top:0;
+	left:0;
+	width:100%;
+	height:546px;
+	background-position:center center;
+	background-size:cover;
 }
 
 .main-slider .pic img {
@@ -1217,8 +1224,9 @@ label {
 
 .main-slider .descr {
   position:absolute;
-  left:19px;
-  top:38px;
+  left:50%;
+  top:176px;
+	margin-left:-490px;
   z-index:5;
   width:310px;
   height:320px;
@@ -1954,13 +1962,25 @@ label {
 }
 
 .main-services .service-link .ico {
-  background-image:url(images/icons-services.png);
   background-repeat:no-repeat;
+	background-position:0 0;
   width:157px;
   height:172px;
   position:absolute;
   left:0;
   top:0;
+}
+
+.main-services .service-link:hover .ico {
+  background-position:0 -175px;
+}
+
+.main-services .service-link:active .ico {
+  background-position:0 -350px;
+}
+
+.main-services .disabled .ico {
+  background-position:0 -525px;
 }
 
 .main-services .service-link .ttl {
@@ -1989,207 +2009,51 @@ label {
 }
 
 .main-services .ico-1 {
-  background-position:0 0;
-}
-
-.main-services .service-link:hover .ico-1 {
-  background-position:0 -350px;
-}
-
-.main-services .service-link:active .ico-1,
-.main-services .service-link-act .ico-1 {
-  background-position:0 -700px;
-}
-
-.main-services .disabled .ico-1 {
-  background-position:0 -1050px;
+  background-image:url(images/ico-service-1.png);
 }
 
 .main-services .ico-2 {
-  background-position:-165px 0;
-}
-
-.main-services .service-link:hover .ico-2 {
-  background-position:-165px -350px;
-}
-
-.main-services .service-link:active .ico-2,
-.main-services .serivce-link-act .ico-2 {
-  background-position:-165px -700px;
-}
-
-.main-services .disabled .ico-2 {
-  background-position:-165px -1050px;
+  background-image:url(images/ico-service-2.png);
 }
 
 .main-services .ico-3 {
-  background-position:-330px 0;
-}
-
-.main-services .service-link:hover .ico-3 {
-  background-position:-330px -350px;
-}
-
-.main-services .service-link:active .ico-3,
-.main-services .serivce-link-act .ico-3 {
-  background-position:-330px -700px;
-}
-
-.main-services .disabled .ico-3 {
-  background-position:-330px -1050px;
+  background-image:url(images/ico-service-3.png);
 }
 
 .main-services .ico-4 {
-  background-position:-495px 0;
-}
-
-.main-services .service-link:hover .ico-4 {
-  background-position:-495px -350px;
-}
-
-.main-services .service-link:active .ico-4,
-.main-services .serivce-link-act .ico-4 {
-  background-position:-495px -700px;
-}
-
-.main-services .disabled .ico-4 {
-  background-position:-495px -1050px;
+  background-image:url(images/ico-service-4.png);
 }
 
 .main-services .ico-5 {
-  background-position:-660px 0;
-}
-
-.main-services .service-link:hover .ico-5 {
-  background-position:-660px -350px;
-}
-
-.main-services .service-link:active .ico-5,
-.main-services .serivce-link-act .ico-5 {
-  background-position:-660px -700px;
-}
-
-.main-services .disabled .ico-5 {
-  background-position:-660px -1050px;
+  background-image:url(images/ico-service-5.png);
 }
 
 .main-services .ico-6 {
-  background-position:-825px 0;
-}
-
-.main-services .service-link:hover .ico-6 {
-  background-position:-825px -350px;
-}
-
-.main-services .service-link:active .ico-6,
-.main-services .serivce-link-act .ico-6 {
-  background-position:-825px -700px;
-}
-
-.main-services .disabled .ico-6 {
-  background-position:-825px -1050px;
+  background-image:url(images/ico-service-6.png);
 }
 
 .main-services .ico-7 {
-  background-position:0 -175px;
-}
-
-.main-services .service-link:hover .ico-7 {
-  background-position:0 -525px;
-}
-
-.main-services .service-link:active .ico-7,
-.main-services .serivce-link-act .ico-7 {
-  background-position:0 -875px;
-}
-
-.main-services .disabled .ico-7 {
-  background-position:0 -1225px;
+  background-image:url(images/ico-service-7.png);
 }
 
 .main-services .ico-8 {
-  background-position:-165px -175px;
-}
-
-.main-services .service-link:hover .ico-8 {
-  background-position:-165px -525px;
-}
-
-.main-services .service-link:active .ico-8,
-.main-services .serivce-link-act .ico-8 {
-  background-position:-165px -875px;
-}
-
-.main-services .disabled .ico-8 {
-  background-position:-165px -1225px;
+  background-image:url(images/ico-service-8.png);
 }
 
 .main-services .ico-9 {
-  background-position:-330px -175px;
-}
-
-.main-services .service-link:hover .ico-9 {
-  background-position:-330px -525px;
-}
-
-.main-services .service-link:active .ico-9,
-.main-services .serivce-link-act .ico-9 {
-  background-position:-330px -875px;
-}
-
-.main-services .disabled .ico-9 {
-  background-position:-330px -1225px;
+  background-image:url(images/ico-service-9.png);
 }
 
 .main-services .ico-10 {
-  background-position:-495px -175px;
-}
-
-.main-services .service-link:hover .ico-10 {
-  background-position:-495px -525px;
-}
-
-.main-services .service-link:active .ico-10,
-.main-services .serivce-link-act .ico-10 {
-  background-position:-495px -875px;
-}
-
-.main-services .disabled .ico-10 {
-  background-position:-495px -1225px;
+  background-image:url(images/ico-service-10.png);
 }
 
 .main-services .ico-11 {
-  background-position:-660px -175px;
-}
-
-.main-services .service-link:hover .ico-11 {
-  background-position:-660px -525px;
-}
-
-.main-services .service-link:active .ico-11,
-.main-services .serivce-link-act .ico-11 {
-  background-position:-660px -875px;
-}
-
-.main-services .disabled .ico-11 {
-  background-position:-660px -1225px;
+  background-image:url(images/ico-service-11.png);
 }
 
 .main-services .ico-12 {
-  background-position:-825px -175px;
-}
-
-.main-services .service-link:hover .ico-12 {
-  background-position:-825px -525px;
-}
-
-.main-services .service-link:active .ico-12,
-.main-services .serivce-link-act .ico-12 {
-  background-position:-825px -875px;
-}
-
-.main-services .disabled .ico-12 {
-  background-position:-825px -1225px;
+  background-image:url(images/ico-service-12.png);
 }
 
 .calc-wrapper {
@@ -2765,7 +2629,7 @@ h2.main-block-ttl span {
 }
 
 .main-socwidgets {
-  padding:60px 0 40px 0;
+  padding:60px 0 20px 0;
 }
 
 .main-socwidgets h2 {
@@ -2818,7 +2682,7 @@ h2.main-block-ttl span {
 }
 
 .main-contacts {
-  padding:0 0 40px 0;
+  padding:20px 0 40px 0;
 }
 
 .contacts-map-wrapper {
@@ -3426,7 +3290,13 @@ fieldset dl:last-child {
   padding:15px 0 0 0;
 }
 
+.header {
+	position:relative;
+	z-index:12;
+}
+
 .header-inner {
+	margin:0;
   background:#f8f8f7 url(images/edge-bottom.png) 0 bottom repeat-x;
 }
 
